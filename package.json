@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server_dev": "NODE_ENV=development node ./src/server/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SoftwareSing",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "~common": "file:src/common",
+    "~config": "file:config",
+    "~entity": "file:src/entity",
+    "~server": "file:src/server"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.0",
