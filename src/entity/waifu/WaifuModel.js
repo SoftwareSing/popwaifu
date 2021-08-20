@@ -25,6 +25,10 @@ const schema = new mongoose.Schema({
     type: String,
     default: ''
   },
+  popAudioUrl: {
+    type: String,
+    default: ''
+  },
   popCount: {
     type: Number,
     default: 0
