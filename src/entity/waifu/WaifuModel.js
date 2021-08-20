@@ -35,5 +35,7 @@ const schema = new mongoose.Schema({
   }
 }, { collection: 'waifu', timestamps: true, versionKey: false })
 
+schema.index({ popCount: 1 })
+
 const model = mongoose.model('Waifu', schema)
 module.exports = model
