@@ -9,11 +9,19 @@ const schema = new mongoose.Schema({
     type: String,
     default: ''
   },
-  imgNormal: {
+  imgNormalUrl: {
     type: String,
     default: ''
   },
-  imgPop: {
+  imgPopUrl: {
+    type: String,
+    default: ''
+  },
+  imgNormalOriginInfo: {
+    type: String,
+    default: ''
+  },
+  imgPopOriginInfo: {
     type: String,
     default: ''
   },
