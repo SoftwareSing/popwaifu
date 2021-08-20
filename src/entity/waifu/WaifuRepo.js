@@ -13,11 +13,14 @@ exports.getList = async function () {
 
 /**
  * @param {String} name
- * @param {String} imgNormal
- * @param {String} imgPop
+ * @param {String} imgNormalUrl
+ * @param {String} imgPopUrl
+ * @param {String} imgNormalOriginInfo
+ * @param {String} imgPopOriginInfo
+ * @param {String} popAudioUrl
  */
-exports.addNewWaifu = async function ({ name, imgNormal, imgPop }) {
-  const doc = await WaifuModel.create({ name, imgNormal, imgPop })
+exports.addNewWaifu = async function ({ name, imgNormalUrl, imgPopUrl, imgNormalOriginInfo, imgPopOriginInfo, popAudioUrl }) {
+  const doc = await WaifuModel.create({ name, imgNormalUrl, imgPopUrl, imgNormalOriginInfo, imgPopOriginInfo, popAudioUrl })
   const obj = doc.toObject()
   return buildWaifu(obj)
 }

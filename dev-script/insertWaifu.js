@@ -10,8 +10,11 @@ async function run () {
 async function insertWaifu () {
   await WaifuRepo.addNewWaifu({
     name: 'waifu1',
-    imgNormal: 'https://i.imgur.com/yYmR0t5.png',
-    imgPop: 'https://i.imgur.com/cmFYQri.png'
+    imgNormalUrl: 'https://i.imgur.com/yYmR0t5.png',
+    imgPopUrl: 'https://i.imgur.com/cmFYQri.png',
+    imgNormalOriginInfo: 'picture from No.15',
+    imgPopOriginInfo: 'picture from No.15',
+    popAudioUrl: 'https://no15rescute.github.io/PopLeopardCat/A.mp3'
   })
 }
 
