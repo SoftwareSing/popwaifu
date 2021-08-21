@@ -24,3 +24,20 @@ exports.addNewWaifu = async function ({ name, imgNormalUrl, imgPopUrl, imgNormal
   const obj = doc.toObject()
   return buildWaifu(obj)
 }
+
+/**
+ * @param {Map<String, Number>} waifuPopMap
+ */
+exports.addWaifusPopCount = async function (waifuPopMap) {
+  const writes = []
+  for (const [waifuId, popCount] of waifuPopMap.entries()) {
+    writes.push({
+      updateOne: {
+        filter: { _id: waifuId },
+        update: { $inc: { popCount } }
+      }
+    })
+  }
+
+  await WaifuModel.bulkWrite(writes, { ordered: false })
+}
