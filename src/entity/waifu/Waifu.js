@@ -1,13 +1,14 @@
 module.exports = class Waifu {
   /**
-   * @param {String} waifuId
-   * @param {String} name
-   * @param {String} imgNormalUrl
-   * @param {String} imgPopUrl
-   * @param {String} imgNormalOriginInfo
-   * @param {String} imgPopOriginInfo
-   * @param {String} popAudioUrl
-   * @param {Number} popCount
+   * @param {Object} obj
+   * @param {String} obj.waifuId
+   * @param {String} obj.name
+   * @param {String} obj.imgNormalUrl
+   * @param {String} obj.imgPopUrl
+   * @param {String} obj.imgNormalOriginInfo
+   * @param {String} obj.imgPopOriginInfo
+   * @param {String} obj.popAudioUrl
+   * @param {Number} obj.popCount
    */
   constructor ({ waifuId, name, imgNormalUrl, imgPopUrl, imgNormalOriginInfo, imgPopOriginInfo, popAudioUrl, popCount }) {
     this.waifuId = waifuId
