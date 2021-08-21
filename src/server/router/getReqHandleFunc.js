@@ -1,4 +1,4 @@
-const { HttpError } = require('~common/error/httpError')
+const HttpError = require('~common/error/HttpError')
 
 /**
  * @typedef {import('@types/express').Request} Request
