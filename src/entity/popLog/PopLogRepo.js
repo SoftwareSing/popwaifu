@@ -1,17 +1,12 @@
 const { popLimit } = require('~config/limitConfig')
 const HttpError = require('~common/error/HttpError')
 
+const PopLogBridge = require('./PopLogBridge')
 const PopLogModel = require('./PopLogModel')
 const { buildPopLog } = require('./helper')
 
 exports.getIpRecentLog = async function (ip) {
-  const obj = await PopLogModel
-    .findOne({
-      ip,
-      logTime: { $gte: new Date(Date.now() - popLimit.time) }
-    })
-    .sort({ logTime: -1 })
-    .lean()
+  const obj = await PopLogBridge.getIpRecentLog(ip)
   if (!obj) return undefined
 
   return buildPopLog(obj)
@@ -22,6 +17,7 @@ exports.record = async function ({ ip, popCount }) {
 
   try {
     const doc = await PopLogModel.create({ ip, popCount, logTime: getLogTime() })
+    await PopLogBridge.delIpRecentLogCache(ip)
     const obj = doc.toObject()
     return buildPopLog(obj)
   } catch (err) {
