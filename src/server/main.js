@@ -1,6 +1,7 @@
 const http = require('http')
 
 const Mongodb = require('~common/connection/Mongodb')
+const { disconnectRedis } = require('~common/connection/redis')
 
 const { expressApp } = require('./expressApp')
 
@@ -36,7 +37,10 @@ function closeServer (SERVER) {
       process.exit(1)
     }
 
-    await Mongodb.disconnect()
+    await Promise.all([
+      Mongodb.disconnect(),
+      disconnectRedis()
+    ])
     console.log('http server closed')
     process.exit(0)
   })
