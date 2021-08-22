@@ -11,8 +11,11 @@
   "author": "SoftwareSing",
   "license": "MIT",
   "dependencies": {
+    "bridge-redis": "0.0.2",
+    "cache-bridge": "0.0.4",
     "express": "^4.17.1",
     "mongoose": "^5.13.7",
+    "redis": "^3.1.2",
     "~common": "file:src/common",
     "~config": "file:config",
     "~entity": "file:src/entity",
