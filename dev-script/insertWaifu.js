@@ -9,12 +9,19 @@ async function run () {
 
 async function insertWaifu () {
   await WaifuRepo.addNewWaifu({
-    name: 'waifu1',
+    name: '十五號',
     imgNormalUrl: 'https://i.imgur.com/yYmR0t5.png',
     imgPopUrl: 'https://i.imgur.com/cmFYQri.png',
-    imgNormalOriginInfo: 'picture from No.15',
-    imgPopOriginInfo: 'picture from No.15',
-    popAudioUrl: 'https://no15rescute.github.io/PopLeopardCat/A.mp3'
+    imgInfo: 'picture from PopLeopardCat ( https://no15rescute.github.io/PopLeopardCat/ )',
+    popAudioUrl: 'https://no15rescute.github.io/PopLeopardCat/A.mp3',
+    popAudioInfo: 'audio from PopLeopardCat ( https://no15rescute.github.io/PopLeopardCat/ )'
+  }, {
+    name: '杏仁ミル',
+    imgNormalUrl: 'https://i.imgur.com/yWz4gP1.png',
+    imgPopUrl: 'https://i.imgur.com/P5DjSxE.png',
+    imgInfo: 'picture from 杏仁ミル twitter ( https://twitter.com/AnninMirudayo/status/1422580442876715008 ) ( https://twitter.com/AnninMirudayo/status/1421945176872742913 )',
+    popAudioUrl: '',
+    popAudioInfo: ''
   })
 }
 

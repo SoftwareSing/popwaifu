@@ -17,15 +17,15 @@ const schema = new mongoose.Schema({
     type: String,
     default: ''
   },
-  imgNormalOriginInfo: {
-    type: String,
-    default: ''
-  },
-  imgPopOriginInfo: {
+  imgInfo: {
     type: String,
     default: ''
   },
   popAudioUrl: {
+    type: String,
+    default: ''
+  },
+  popAudioInfo: {
     type: String,
     default: ''
   },
