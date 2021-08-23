@@ -1,3 +1,4 @@
+const { disconnectRedis } = require('~common/connection/redis')
 const Mongodb = require('~common/connection/Mongodb')
 const WaifuRepo = require('~entity/waifu/WaifuRepo')
 
@@ -5,6 +6,7 @@ async function run () {
   await Mongodb.connect()
   await insertWaifu()
   await Mongodb.disconnect()
+  await disconnectRedis()
 }
 
 async function insertWaifu () {
@@ -15,7 +17,8 @@ async function insertWaifu () {
     imgInfo: 'picture from PopLeopardCat ( https://no15rescute.github.io/PopLeopardCat/ )',
     popAudioUrl: 'https://no15rescute.github.io/PopLeopardCat/A.mp3',
     popAudioInfo: 'audio from PopLeopardCat ( https://no15rescute.github.io/PopLeopardCat/ )'
-  }, {
+  })
+  await WaifuRepo.addNewWaifu({
     name: '杏仁ミル',
     imgNormalUrl: 'https://i.imgur.com/yWz4gP1.png',
     imgPopUrl: 'https://i.imgur.com/P5DjSxE.png',
