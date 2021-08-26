@@ -2,6 +2,10 @@ const WaifuBridge = require('./WaifuBridge')
 const WaifuModel = require('./WaifuModel')
 const { buildWaifu } = require('./helper')
 
+/**
+ * @typedef {import('./Waifu').ModeConfig} ModeConfig
+ */
+
 exports.getList = async function () {
   /**
    * @type {Array}
@@ -11,15 +15,12 @@ exports.getList = async function () {
 }
 
 /**
- * @param {String} name
- * @param {String} imgNormalUrl
- * @param {String} imgPopUrl
- * @param {String} imgNormalOriginInfo
- * @param {String} imgPopOriginInfo
- * @param {String} popAudioUrl
+ * @param {Object} waifuData
+ * @param {String} waifuData.name
+ * @param {Array<ModeConfig>} waifuData.modeConfigList
  */
-exports.addNewWaifu = async function ({ name, imgNormalUrl, imgPopUrl, imgNormalOriginInfo, imgPopOriginInfo, popAudioUrl }) {
-  const doc = await WaifuModel.create({ name, imgNormalUrl, imgPopUrl, imgNormalOriginInfo, imgPopOriginInfo, popAudioUrl })
+exports.addNewWaifu = async function ({ name, modeConfigList }) {
+  const doc = await WaifuModel.create({ name, modeConfigList })
   const obj = doc.toObject()
   return buildWaifu(obj)
 }
