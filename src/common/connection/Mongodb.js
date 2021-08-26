@@ -4,11 +4,7 @@ const { mongoUrl } = require('~config/mongodbConfig')
 exports.connect = async function () {
   try {
     const result = await mongoose.connect(mongoUrl, {
-      autoIndex: false,
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-      useCreateIndex: true,
-      useFindAndModify: false
+      autoIndex: false
     })
     console.log('MongoDB connect successful')
     return result
