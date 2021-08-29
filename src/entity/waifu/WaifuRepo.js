@@ -16,11 +16,12 @@ exports.getList = async function () {
 
 /**
  * @param {Object} waifuData
+ * @param {String} waifuData.urlId
  * @param {String} waifuData.name
  * @param {Array<ModeConfig>} waifuData.modeConfigList
  */
-exports.addNewWaifu = async function ({ name, modeConfigList }) {
-  const doc = await WaifuModel.create({ name, modeConfigList })
+exports.addNewWaifu = async function ({ urlId, name, modeConfigList }) {
+  const doc = await WaifuModel.create({ urlId, name, modeConfigList })
   const obj = doc.toObject()
   return buildWaifu(obj)
 }

@@ -11,6 +11,7 @@ async function run () {
 
 async function insertWaifu () {
   await WaifuRepo.addNewWaifu({
+    urlId: 'no15',
     name: '十五號',
     modeConfigList: [
       {
@@ -26,13 +27,14 @@ async function insertWaifu () {
         imgNormalUrl: 'https://i.imgur.com/aPOFmrA.jpg',
         imgPopUrl: 'https://i.imgur.com/7bPX0yo.jpg',
         imgInfo: 'https://youtu.be/QEQntL4Bb14',
-        audioNormalUrl: 'https://cdn.discordapp.com/attachments/880435970930008144/880435997605785670/15-one.mp3',
-        audioPopUrl: 'https://cdn.discordapp.com/attachments/880435970930008144/880435999463866398/15-two.mp3',
+        audioNormalUrl: '/audio/15-two.mp3',
+        audioPopUrl: '/audio/15-one.mp3',
         audioInfo: 'https://youtu.be/QEQntL4Bb14'
       }
     ]
   })
   await WaifuRepo.addNewWaifu({
+    urlId: 'annin-miru',
     name: '杏仁ミル',
     modeConfigList: [
       {
@@ -44,6 +46,7 @@ async function insertWaifu () {
     ]
   })
   await WaifuRepo.addNewWaifu({
+    urlId: 'miku',
     name: '初音ミク',
     modeConfigList: [
       {

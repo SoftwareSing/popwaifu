@@ -36,6 +36,10 @@ const schema = new mongoose.Schema({
     type: String,
     default: '001.000.000'
   },
+  urlId: {
+    type: String,
+    required: true
+  },
   name: {
     type: String,
     default: ''
@@ -59,6 +63,7 @@ const schema = new mongoose.Schema({
 }, { collection: 'waifu', timestamps: true, versionKey: false })
 
 schema.index({ popCount: 1 })
+schema.index({ urlId: 1 }, { unique: true })
 
 const model = mongoose.model('Waifu', schema)
 module.exports = model

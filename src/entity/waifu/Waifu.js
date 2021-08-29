@@ -13,12 +13,14 @@ module.exports = class Waifu {
   /**
    * @param {Object} obj
    * @param {String} obj.waifuId
+   * @param {String} obj.urlId
    * @param {String} obj.name
    * @param {Number} obj.popCount
    * @param {Array<ModeConfig>} obj.modeConfigList
    */
-  constructor ({ waifuId, name, popCount, modeConfigList }) {
+  constructor ({ waifuId, urlId, name, popCount, modeConfigList }) {
     this.waifuId = waifuId
+    this.urlId = urlId
     this.name = name
     this.popCount = popCount
     this.modeConfigList = modeConfigList
