@@ -21,7 +21,7 @@ exports.record = async function ({ ip, popCount }) {
     const obj = doc.toObject()
     return buildPopLog(obj)
   } catch (err) {
-    if (err.name === 'MongoError' && err.code === 11000) throw new HttpError(429, 'too fast')
+    if (err.name === 'MongoServerError' && err.code === 11000) throw new HttpError(429, 'too fast')
     else throw err
   }
 }
