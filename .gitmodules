@@ -1,0 +1,3 @@
+[submodule "popwaifu-web"]
+	path = popwaifu-web
+	url = https://github.com/SoftwareSing/popwaifu-web.git

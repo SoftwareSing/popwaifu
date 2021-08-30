@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
+    "build_web": "sh build-web.sh",
     "server_dev": "NODE_ENV=development node ./src/server/main.js",
+    "server_pm2_prod": "pm2 reload ecosystem.server.config.js --env production",
+    "server_deploy_prod": "npm run build_web && npm run server_pm2_prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SoftwareSing",
