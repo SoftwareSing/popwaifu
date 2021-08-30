@@ -8,7 +8,7 @@ const defaultProjection = { schemaVersion: 0, createdAt: 0, updatedAt: 0 }
 const { bridge: listBridge } = cacheBridge({
   cacheClient: redisCacheClient,
   prefix: 'list',
-  ttl: 15 * 1000,
+  ttl: 4 * 1000,
   get: async function () {
     return await WaifuModel.find({}, defaultProjection).lean()
   }

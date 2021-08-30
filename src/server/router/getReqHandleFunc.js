@@ -8,23 +8,31 @@ const HttpError = require('~common/error/HttpError')
  * @callback ReqCallback
  * @param {Request} req
  */
+/**
+ * @typedef {Object} Options
+ * @property {String} [cacheControl]
+ */
 
 /**
  * @param {ReqCallback} callback
+ * @param {Options} [options]
  */
-exports.getReqHandleFunc = function (callback) {
+exports.getReqHandleFunc = function (callback, options = {}) {
   return function (req, res, next) {
-    return tryHandleReq(req, res, next, callback)
+    return tryHandleReq(req, res, next, callback, options)
   }
 }
 
 /**
  * @param {Request} req
  * @param {Response} res
+ * @param {Options} options
  */
-async function tryHandleReq (req, res, next, callback) {
+async function tryHandleReq (req, res, next, callback, options) {
   try {
     const result = await callback(req)
+    if (options.cacheControl) res.setHeader('Cache-Control', options.cacheControl)
+
     return res.status(200).json(result)
   } catch (err) {
     if (err instanceof HttpError) {
