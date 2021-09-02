@@ -1,6 +1,6 @@
 module.exports = {
   popLimit: {
-    time: 15 * 1000,
-    count: 500
+    time: 5 * 1000,
+    count: 150
   }
 }

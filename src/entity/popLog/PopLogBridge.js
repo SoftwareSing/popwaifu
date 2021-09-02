@@ -9,7 +9,7 @@ const defaultProjection = { schemaVersion: 0 }
 const { bridge: recentLogBridge, cache: recentLogCache } = cacheBridge({
   cacheClient: redisCacheClient,
   prefix: 'popLog',
-  ttl: 15 * 1000,
+  ttl: popLimit.time,
   cacheUndefined: true,
   ttlForUndefined: 1 * 1000,
   get: async function (ip) {
