@@ -20,6 +20,7 @@ const schema = new mongoose.Schema({
 }, { collection: 'pop_log', timestamps: false, versionKey: false })
 
 schema.index({ ip: 1, logTime: -1 }, { unique: true, background: false })
+schema.index({ logTime: 1 })
 
 const model = mongoose.model('PopLog', schema)
 module.exports = model

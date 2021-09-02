@@ -26,6 +26,17 @@ exports.record = async function ({ ip, popCount }) {
   }
 }
 
+/**
+ * @param {Object} query
+ * @param {Date} query.beforeTime
+ */
+exports.removeLog = async function ({ beforeTime }) {
+  const result = await PopLogModel.deleteMany({
+    logTime: { $lt: beforeTime }
+  })
+  return result.deletedCount
+}
+
 // make unique index work
 function getLogTime () {
   const now = Date.now()
