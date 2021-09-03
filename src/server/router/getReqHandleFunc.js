@@ -1,4 +1,5 @@
 const HttpError = require('~common/error/HttpError')
+const { consoleUnexpectedError } = require('~common/error/consoleUnexpectedError')
 
 /**
  * @typedef {import('@types/express').Request} Request
@@ -42,14 +43,4 @@ async function tryHandleReq (req, res, next, callback, options) {
       return res.status(500).json({ error: 'server unexpected error' })
     }
   }
-}
-
-/**
- * @param {Error} err
- */
-function consoleUnexpectedError (err) {
-  const line = '----------'
-  const time = (new Date()).toISOString()
-  const text = 'unexpected error'
-  console.error(`${line}\n${time}\n${text}\n${err.stack}\n${line}\n`)
 }

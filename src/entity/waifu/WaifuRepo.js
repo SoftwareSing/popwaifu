@@ -14,6 +14,11 @@ exports.getList = async function () {
   return objList.map(buildWaifu)
 }
 
+exports.getByUrlId = async function (urlId) {
+  const obj = await WaifuBridge.getByUrlId(urlId)
+  return obj ? buildWaifu(obj) : undefined
+}
+
 /**
  * @param {Object} waifuData
  * @param {String} waifuData.urlId

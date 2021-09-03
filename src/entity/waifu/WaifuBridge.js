@@ -14,6 +14,22 @@ const { bridge: listBridge } = cacheBridge({
   }
 })
 
+const { bridge: urlIdWaifuBridge } = cacheBridge({
+  cacheClient: redisCacheClient,
+  prefix: 'urlIdWaifu',
+  ttl: 120 * 1000,
+  cacheUndefined: true,
+  ttlForUndefined: 10 * 1000,
+  get: async function (urlId) {
+    const obj = await WaifuModel.findOne({ urlId }, defaultProjection).lean()
+    return obj || undefined
+  }
+})
+
 exports.getList = function () {
   return listBridge.get('list')
+}
+
+exports.getByUrlId = function (urlId) {
+  return urlIdWaifuBridge.get(urlId)
 }
