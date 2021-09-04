@@ -25,9 +25,12 @@ exports.getByUrlId = async function (urlId) {
  * @param {String} waifuData.name
  * @param {Array<ModeConfig>} waifuData.modeConfigList
  */
-exports.addNewWaifu = async function ({ urlId, name, modeConfigList }) {
-  const doc = await WaifuModel.create({ urlId, name, modeConfigList })
-  const obj = doc.toObject()
+exports.upsertWaifu = async function ({ urlId, name, modeConfigList }) {
+  const obj = await WaifuModel.findOneAndUpdate(
+    { urlId },
+    { name, modeConfigList },
+    { new: true, upsert: true, setDefaultsOnInsert: true }
+  ).lean()
   return buildWaifu(obj)
 }
 
