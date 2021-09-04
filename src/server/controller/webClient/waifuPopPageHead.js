@@ -16,7 +16,8 @@ exports.waifuPopPageHead = async function ({ waifuUrlId, modeName = 'default' })
 
   const { head } = PageHead.render({
     title: waifu.name,
-    description: `Click ${waifu.name}`
+    description: `Click ${waifu.name}`,
+    image: mode.imgIconUrl
   })
 
   return head
