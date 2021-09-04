@@ -13,6 +13,10 @@ const modeConfigSchema = new mongoose.Schema({
     type: String,
     default: ''
   },
+  imgIconUrl: {
+    type: String,
+    default: ''
+  },
   imgInfo: {
     type: String,
     default: ''
@@ -34,7 +38,7 @@ const modeConfigSchema = new mongoose.Schema({
 const schema = new mongoose.Schema({
   schemaVersion: {
     type: String,
-    default: '001.000.000'
+    default: '001.001.000'
   },
   urlId: {
     type: String,
@@ -54,6 +58,7 @@ const schema = new mongoose.Schema({
       modeName: 'default',
       imgNormalUrl: '',
       imgPopUrl: '',
+      imgIconUrl: '',
       imgInfo: '',
       audioNormalUrl: '',
       audioPopUrl: '',

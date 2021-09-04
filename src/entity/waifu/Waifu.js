@@ -3,6 +3,7 @@
  * @property {String} modeName
  * @property {String} imgNormalUrl
  * @property {String} imgPopUrl
+ * @property {String} [imgIconUrl]
  * @property {String} [imgInfo]
  * @property {String} [audioNormalUrl]
  * @property {String} [audioPopUrl]
