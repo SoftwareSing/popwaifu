@@ -60,7 +60,7 @@ async function insertWaifu () {
         imgPopUrl: 'https://i.imgur.com/8jOQjgL.jpg',
         imgIconUrl: 'https://i.imgur.com/meOjXSc.png',
         imgInfo: 'picture from pixiv: 千夜QYS3 ( https://www.pixiv.net/artworks/56710319 )',
-        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/miku-meow.mp3',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/miku-meow-2.mp3',
         audioInfo: 'https://youtu.be/kS2yWmLCtnc?t=44'
       }
     ]
