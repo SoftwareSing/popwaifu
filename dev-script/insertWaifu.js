@@ -120,6 +120,34 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'dio',
+    name: 'DIO',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/tdCsOD3.png',
+        imgPopUrl: 'https://i.imgur.com/RCpRHu6.png',
+        imgIconUrl: 'https://i.imgur.com/tdCsOD3.png',
+        imgInfo: 'unknown, but seems from JoJo Part 3'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'coco',
+    name: '桐生ココ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/bydcGFC.png',
+        imgPopUrl: 'https://i.imgur.com/kdJyMuB.png',
+        imgIconUrl: 'https://i.imgur.com/kdJyMuB.png',
+        imgInfo: 'https://virtualyoutuber.fandom.com/wiki/Kiryu_Coco/Gallery',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/coco-next-meme.mp3',
+        audioInfo: 'https://youtu.be/-AGhA-GaZ_o?t=25'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
