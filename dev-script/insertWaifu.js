@@ -105,6 +105,21 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'shirakami-fubuki',
+    name: '白上フブキ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/1dXI4bn.png',
+        imgPopUrl: 'https://i.imgur.com/ecFG33p.png',
+        imgIconUrl: 'https://i.imgur.com/jvtlEsd.png',
+        imgInfo: 'https://en.hololive.tv/portfolio/items/shirakami-fubuki',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/shirakami-fubuki-nya.mp3',
+        audioInfo: 'https://youtu.be/kQXc80jgk-E?t=7654'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
