@@ -193,6 +193,19 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'gojo-masaru',
+    name: '五条勝',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/t8MR5ju.png',
+        imgPopUrl: 'https://i.imgur.com/Sxlf2fU.png',
+        imgIconUrl: 'https://i.imgur.com/AeNdaD2.png',
+        imgInfo: 'https://youtu.be/K9_A35uCpYA'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
