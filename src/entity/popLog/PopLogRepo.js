@@ -3,27 +3,24 @@ const HttpError = require('~common/error/HttpError')
 
 const PopLogBridge = require('./PopLogBridge')
 const PopLogModel = require('./PopLogModel')
-const { buildPopLog } = require('./helper')
+const { buildPopLog, getIpTimeKey } = require('./helper')
 
 exports.getIpRecentLog = async function (ip) {
-  const obj = await PopLogBridge.getIpRecentLog(ip)
-  if (!obj) return undefined
+  const ipTimeKey = getIpTimeKey(ip)
+  const popCount = await PopLogBridge.getIpTimeCount(ipTimeKey)
+  if (!popCount) return undefined
 
-  return buildPopLog(obj)
+  return buildPopLog(ipTimeKey, popCount)
 }
 
 exports.record = async function ({ ip, popCount }) {
   if (popCount > popLimit.count) throw new HttpError(403, 'too many')
 
-  try {
-    const doc = await PopLogModel.create({ ip, popCount, logTime: getLogTime() })
-    await PopLogBridge.delIpRecentLogCache(ip)
-    const obj = doc.toObject()
-    return buildPopLog(obj)
-  } catch (err) {
-    if (err.name === 'MongoServerError' && err.code === 11000) throw new HttpError(429, 'too fast')
-    else throw err
-  }
+  const ipTimeKey = getIpTimeKey(ip)
+  const writeResult = await PopLogBridge.writeIpTimeCount(ipTimeKey, popCount)
+  if (!writeResult) throw new HttpError(429, 'too fast')
+
+  return buildPopLog(ipTimeKey, popCount)
 }
 
 /**
@@ -35,10 +32,4 @@ exports.removeLog = async function ({ beforeTime }) {
     logTime: { $lt: beforeTime }
   })
   return result.deletedCount
-}
-
-// make unique index work
-function getLogTime () {
-  const now = Date.now()
-  return now - (now % popLimit.time)
 }
