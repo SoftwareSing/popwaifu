@@ -12,6 +12,7 @@ const { consoleUnexpectedError } = require('~common/error/consoleUnexpectedError
 /**
  * @typedef {Object} Options
  * @property {String} [cacheControl]
+ * @property {Number} [successStatusCode]
  */
 
 /**
@@ -34,7 +35,8 @@ async function tryHandleReq (req, res, next, callback, options) {
     const result = await callback(req)
     if (options.cacheControl) res.setHeader('Cache-Control', options.cacheControl)
 
-    return res.status(200).json(result)
+    const statusCode = options.successStatusCode || 200
+    return res.status(statusCode).json(result)
   } catch (err) {
     if (err instanceof HttpError) {
       return res.status(err.statusCode).json({ error: err.message })

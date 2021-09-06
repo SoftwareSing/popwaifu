@@ -12,7 +12,7 @@ popRouterV1.route('/record')
       ip: getIp(req),
       waifuPopObj: req.body.waifuPopObj
     })
-  }))
+  }, { successStatusCode: 202 }))
 
 module.exports = {
   popRouterV1
