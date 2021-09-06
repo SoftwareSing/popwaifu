@@ -148,6 +148,51 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'minato-aqua',
+    name: '湊あくあ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/9Xdi8O1.jpg',
+        imgPopUrl: 'https://i.imgur.com/lvB1h1i.jpg',
+        imgIconUrl: 'https://i.imgur.com/poPJZ8S.png',
+        imgInfo: 'https://youtu.be/rddmVGgem2Q',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/minato-aqua-nya.mp3',
+        audioInfo: 'https://youtu.be/rddmVGgem2Q'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'rayer',
+    name: '蕾兒',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/XM6yUUU.png',
+        imgPopUrl: 'https://i.imgur.com/zIBcFwy.png',
+        imgIconUrl: 'https://i.imgur.com/zIBcFwy.png',
+        imgInfo: 'https://youtu.be/W9xiniyF2Zk',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/rayer-pop.mp3',
+        audioInfo: 'https://youtu.be/W9xiniyF2Zk'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'padko',
+    name: '平平子',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/3FBEBVL.jpg',
+        imgPopUrl: 'https://i.imgur.com/VQEWET6.jpg',
+        imgIconUrl: 'https://i.imgur.com/xrypgmh.png',
+        imgInfo: 'https://youtu.be/Z4iRCaUsQx0',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/padko-1.mp3',
+        audioInfo: 'https://youtu.be/BjOQD6j9Zyc?t=9233'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
