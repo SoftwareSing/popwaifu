@@ -18,6 +18,29 @@ exports.expressApp = function () {
   app.use(function (req, res) {
     res.status(404).json({ error: 'unknow path' })
   })
+  app.use(errorHandler)
 
   return app
+}
+
+/**
+ * @param {Error} err
+ */
+function errorHandler (err, req, res, next) {
+  if (err instanceof SyntaxError) {
+    res.status(400).json({ error: 'invalid json' })
+    return next()
+  } else if (err.message === 'request aborted') {
+    res.status(400).json()
+    return next()
+  }
+
+  let message = `\n!! error at: ${(new Date()).toISOString()}\n`
+  message += `req.url: ${req.url}\n`
+  console.error(message)
+  console.error(err)
+
+  res.status(500).send({ error: 'unknow error' })
+
+  return next()
 }
