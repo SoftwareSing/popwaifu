@@ -1,10 +1,13 @@
 const WaifuBridge = require('./WaifuBridge')
 const WaifuModel = require('./WaifuModel')
 const { buildWaifu } = require('./helper')
+const { addWaifusPopCount } = require('./waifuRepoMethod/addWaifusPopCount')
 
 /**
  * @typedef {import('./Waifu').ModeConfig} ModeConfig
  */
+
+exports.addWaifusPopCount = addWaifusPopCount
 
 exports.getList = async function () {
   /**
@@ -32,21 +35,4 @@ exports.upsertWaifu = async function ({ urlId, name, modeConfigList }) {
     { new: true, upsert: true, setDefaultsOnInsert: true }
   ).lean()
   return buildWaifu(obj)
-}
-
-/**
- * @param {Map<String, Number>} waifuPopMap
- */
-exports.addWaifusPopCount = async function (waifuPopMap) {
-  const writes = []
-  for (const [waifuId, popCount] of waifuPopMap.entries()) {
-    writes.push({
-      updateOne: {
-        filter: { _id: waifuId },
-        update: { $inc: { popCount } }
-      }
-    })
-  }
-
-  await WaifuModel.bulkWrite(writes, { ordered: false })
 }
