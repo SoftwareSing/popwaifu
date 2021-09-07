@@ -206,6 +206,36 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'beta-hoonie',
+    name: 'β虎妮',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/ZcnpKP1.png',
+        imgPopUrl: 'https://i.imgur.com/FCasd4b.png',
+        imgIconUrl: 'https://i.imgur.com/fWlFr6q.png',
+        imgInfo: 'https://youtu.be/8DepX5_8k2E',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/beta-hoonie-pop.mp3',
+        audioInfo: 'https://youtu.be/8DepX5_8k2E'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'hu-tao',
+    name: '胡桃',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/BzcRfrd.jpg',
+        imgPopUrl: 'https://i.imgur.com/NB3Zaze.jpg',
+        imgIconUrl: 'https://i.imgur.com/ArXQXwF.png',
+        imgInfo: 'https://www.pixiv.net/artworks/92049927',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hu-tao-pop.mp3',
+        audioInfo: 'from Genshin Impact PC'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
