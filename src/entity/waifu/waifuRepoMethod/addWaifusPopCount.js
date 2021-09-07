@@ -1,4 +1,5 @@
 const BackgroundRunner = require('~common/utils/BackgroundRunner')
+const { sleep } = require('~common/utils/sleep')
 const WaifuModel = require('../WaifuModel')
 
 /**
@@ -21,10 +22,11 @@ class IncBulkHelper {
      */
     this.map = new Map()
 
-    setTimeout(() => {
+    BackgroundRunner.run(async () => {
+      await sleep(100)
       IncBulkHelper.instance = undefined
-      BackgroundRunner.run(this.writeToDb.bind(this))
-    }, 100)
+      await this.writeToDb()
+    })
   }
 
   incPopCount (waifuId, incCount) {
