@@ -267,6 +267,36 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'patra',
+    name: '周防パトラ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/fngi9Il.png',
+        imgPopUrl: 'https://i.imgur.com/H8J0BNy.png',
+        imgIconUrl: 'https://i.imgur.com/waHRKCT.png',
+        imgInfo: 'https://twitter.com/Patra_HNST/status/1431010128438784003',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/patra-pop.mp3',
+        audioInfo: 'https://twitter.com/Patra_HNST/status/1429850594504679436'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'lumina',
+    name: 'Lumina',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/0Yx8d1g.png',
+        imgPopUrl: 'https://i.imgur.com/nyVDYir.png',
+        imgIconUrl: 'https://i.imgur.com/QVVwFXT.png',
+        imgInfo: 'https://youtu.be/1c2gGgQbbOE?t=207',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/lumina-pop.mp3',
+        audioInfo: 'https://youtu.be/1c2gGgQbbOE?t=207'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
