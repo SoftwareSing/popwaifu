@@ -236,6 +236,37 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'lancee',
+    name: '蘭希LanCee',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/Hb7eDiq.png',
+        imgPopUrl: 'https://i.imgur.com/Wmt52Vf.png',
+        imgIconUrl: 'https://i.imgur.com/j4osERO.png',
+        imgInfo: 'https://www.youtube.com/watch?v=M7Ym_4ngeT8&t=2387s',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/lancee-pop.mp3',
+        audioInfo: 'https://www.youtube.com/watch?v=M7Ym_4ngeT8&t=2387s'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'ayame',
+    name: '百鬼あやめ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/fnkYIDH.jpg',
+        imgPopUrl: 'https://i.imgur.com/gKremaa.jpg',
+        imgIconUrl: 'https://i.imgur.com/8tZit6E.png',
+        imgInfo: 'https://youtu.be/05VuFmvHjNY',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ayame-yodazo.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ayame-yodayo.mp3',
+        audioInfo: 'https://youtu.be/05VuFmvHjNY & https://youtu.be/hlH6iNcEvq8'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
