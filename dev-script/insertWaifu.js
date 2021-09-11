@@ -387,6 +387,51 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'hasukiaoi',
+    name: '狛井葵',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/K8x1fuM.png',
+        imgPopUrl: 'https://i.imgur.com/sbfjOAl.png',
+        imgIconUrl: 'https://i.imgur.com/3pcbucZ.png',
+        imgInfo: 'from her discord server',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hasukiaoi-pop.mp3',
+        audioInfo: 'https://www.youtube.com/shorts/YUP6woQDBDc'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'aisu',
+    name: '小林あいす',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/vmoBTtM.jpg',
+        imgPopUrl: 'https://i.imgur.com/Wajbupw.png',
+        imgIconUrl: 'https://i.imgur.com/Fz0RDlW.png',
+        imgInfo: 'from https://twitter.com/kobayashi_aisu/status/1412802879358787592 & https://youtu.be/kiKTbtsywbs?t=4050',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/aisu-pop.mp3',
+        audioInfo: 'https://youtu.be/tY9tPscDBVo'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'jotaro',
+    name: '空条承太郎',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/iETbuuj.png',
+        imgPopUrl: 'https://i.imgur.com/kYvJ3LN.png',
+        imgIconUrl: 'https://i.imgur.com/12pGYEJ.png',
+        imgInfo: 'https://youtu.be/M4OT_zxvcLc?t=22',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/jotaro-yakamashi.mp3',
+        audioInfo: 'https://youtu.be/M4OT_zxvcLc?t=22'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
