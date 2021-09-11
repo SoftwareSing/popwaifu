@@ -297,6 +297,21 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'boru',
+    name: '毬庫波爾',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/ecqpAXe.png',
+        imgPopUrl: 'https://i.imgur.com/YyJTGT0.png',
+        imgIconUrl: 'https://i.imgur.com/b4tgOmH.png',
+        imgInfo: 'https://youtu.be/5cQn-G3PGMA',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/boru-pop.mp3',
+        audioInfo: 'vtuber herself'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
