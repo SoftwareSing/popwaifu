@@ -372,6 +372,21 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'merak',
+    name: '天璇',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/KbZMBUV.png',
+        imgPopUrl: 'https://i.imgur.com/8qrf6qJ.png',
+        imgIconUrl: 'https://i.imgur.com/8qrf6qJ.png',
+        imgInfo: 'from herself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/merak-pop.mp3',
+        audioInfo: 'from herself'
+      }
+    ]
+  })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
