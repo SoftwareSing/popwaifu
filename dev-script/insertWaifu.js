@@ -308,7 +308,67 @@ async function insertWaifu () {
         imgIconUrl: 'https://i.imgur.com/b4tgOmH.png',
         imgInfo: 'https://youtu.be/5cQn-G3PGMA',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/boru-pop.mp3',
-        audioInfo: 'vtuber herself'
+        audioInfo: 'from herself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'ryoko724',
+    name: '神崎涼子',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/ekSYWDo.png',
+        imgPopUrl: 'https://i.imgur.com/EhTSOxs.png',
+        imgIconUrl: 'https://i.imgur.com/OAYNn7a.png',
+        imgInfo: 'from herself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ryoko724-pop.mp3',
+        audioInfo: 'from herself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'catastrophe',
+    name: '達克卡塔史託洛福',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/6nTxyZK.png',
+        imgPopUrl: 'https://i.imgur.com/D8oG9Jv.png',
+        imgIconUrl: 'https://i.imgur.com/1hU8uXK.png',
+        imgInfo: 'from himself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/catastrophe-pop.mp3',
+        audioInfo: 'from himself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'erokawasaya',
+    name: '榎川幸',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/egDxILb.jpeg',
+        imgPopUrl: 'https://i.imgur.com/XtcU0cz.jpeg',
+        imgIconUrl: 'https://i.imgur.com/aUKEu1N.png',
+        imgInfo: 'https://youtu.be/ZYY0Wq5NeE4?t=440',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/erokawasaya-pop.mp3',
+        audioInfo: 'https://youtu.be/ZYY0Wq5NeE4?t=440'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'bianfubeite',
+    name: '蝙蝠貝特',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/HfvXmUV.jpg',
+        imgPopUrl: 'https://i.imgur.com/EoQhb1T.jpg',
+        imgIconUrl: 'https://i.imgur.com/BXu3atD.png',
+        imgInfo: 'from herself  https://www.facebook.com/profile.php?id=100072528154937',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/bianfubeite-pop.mp3',
+        audioInfo: 'from herself'
       }
     ]
   })
