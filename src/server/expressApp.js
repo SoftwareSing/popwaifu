@@ -9,6 +9,13 @@ const { webClientRouter } = require('./router/webClientRouter')
 exports.expressApp = function () {
   const app = express()
 
+  let close = false
+  app.use((req, res, next) => {
+    if (close) res.setHeader('Connection', 'close')
+    next()
+  })
+  app.closeConnection = () => { close = true }
+
   if (ENV === envKeyword.development) app.use(cors())
   app.use(express.urlencoded({ limit: '10mb', extended: true }))
   app.use(express.json({ limit: '10mb', extended: true }))

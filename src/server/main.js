@@ -14,7 +14,7 @@ function main () {
 
   process.on('SIGINT', () => {
     console.info('SIGINT signal received')
-    closeServer(httpServer)
+    closeServer(httpServer, app)
   })
 }
 
@@ -29,9 +29,10 @@ async function startServer (SERVER) {
   })
 }
 
-function closeServer (SERVER) {
-  console.log(`${new Date().toISOString()} closing http server`)
+function closeServer (SERVER, app) {
+  app.closeConnection()
 
+  console.log(`${new Date().toISOString()} closing http server`)
   SERVER.close(async (err) => {
     console.log(`${new Date().toISOString()} closed http server`)
     if (err) {
