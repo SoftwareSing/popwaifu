@@ -399,6 +399,16 @@ async function insertWaifu () {
         imgInfo: 'from her discord server',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hasukiaoi-pop.mp3',
         audioInfo: 'https://www.youtube.com/shorts/YUP6woQDBDc'
+      },
+      {
+        modeName: 'black',
+        imgNormalUrl: 'https://i.imgur.com/6vtP85m.png',
+        imgPopUrl: 'https://i.imgur.com/IwEQa50.png',
+        imgIconUrl: 'https://i.imgur.com/rrIerIu.png',
+        imgInfo: 'from her discord server',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hasukiaoi-black-pop.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hasukiaoi-black-normal.mp3',
+        audioInfo: 'https://youtu.be/DRSii5MqqD8?t=1251'
       }
     ]
   })
@@ -432,6 +442,97 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'tcharuru',
+    name: '天晴Haruru',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/ZiNYFL4.png',
+        imgPopUrl: 'https://i.imgur.com/ZWmZAIp.png',
+        imgIconUrl: 'https://i.imgur.com/GpS1irg.png',
+        imgInfo: 'from himself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/tcharuru-pop.mp3',
+        audioInfo: 'from himself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'moritsukireiyi',
+    name: '森月澪依',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/cRRQADh.png',
+        imgPopUrl: 'https://i.imgur.com/LwWwier.png',
+        imgIconUrl: 'https://i.imgur.com/0aNcCOG.png',
+        imgInfo: 'https://youtu.be/Oh7zaw108g8',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/moritsukireiyi-pop.mp3',
+        audioInfo: 'https://youtu.be/Oh7zaw108g8?t=1'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'uto',
+    name: '天使うと',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/DpoiSoe.png',
+        imgPopUrl: 'https://i.imgur.com/Ivy7P4o.png',
+        imgIconUrl: 'https://i.imgur.com/DpoiSoe.png',
+        imgInfo: 'https://youtu.be/mH3JaxvyNj4',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/uto-pop.mp3',
+        audioInfo: 'from her stream (not sure which time)'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'emerald',
+    name: 'Emerald',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/WcJL5Um.png',
+        imgPopUrl: 'https://i.imgur.com/vidXcRm.png',
+        imgIconUrl: 'https://i.imgur.com/1Jy6K9i.png',
+        imgInfo: 'from herself ( https://twitter.com/Emerald_ch_ )',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/emerald-pop.mp3',
+        audioInfo: 'from herself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'pomu',
+    name: '波姆',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/NL71Aig.png',
+        imgPopUrl: 'https://i.imgur.com/VMLdSR4.jpg',
+        imgIconUrl: 'https://i.imgur.com/thI1cmp.png',
+        imgInfo: 'https://twitter.com/Otter_Pomu/status/1416707720430850055 & https://drive.google.com/drive/folders/1egozBgLf-GgnLCjJt20KexV8E7-ow-2u',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/pomu-pop.mp3',
+        audioInfo: 'https://youtu.be/Ak-jkujxHDc?t=6682'
+      }
+    ]
+  })
+
+  // await WaifuRepo.upsertWaifu({
+  //   urlId: '',
+  //   name: '',
+  //   modeConfigList: [
+  //     {
+  //       modeName: 'default',
+  //       imgNormalUrl: '',
+  //       imgPopUrl: '',
+  //       imgIconUrl: '',
+  //       imgInfo: '',
+  //       audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/.mp3',
+  //       audioInfo: ''
+  //     }
+  //   ]
+  // })
   // for (let i = 0; i < 200; i += 1) {
   //   await WaifuRepo.upsertWaifu({
   //     urlId: `${Math.random()}${Date.now()}`.slice(2),
