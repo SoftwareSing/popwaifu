@@ -517,6 +517,21 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'boureirabbi',
+    name: '紡霊拉比',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/hS5j1nl.png',
+        imgPopUrl: 'https://i.imgur.com/9znI7VY.png',
+        imgIconUrl: 'https://i.imgur.com/McKysPx.png',
+        imgInfo: 'from herselft',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/boureirabbi-pop.mp3',
+        audioInfo: 'https://youtu.be/JdJAU8hTHYc?t=2'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
