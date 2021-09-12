@@ -532,6 +532,41 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'linglan',
+    name: '李李鈴蘭',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/xwGmGln.png',
+        imgPopUrl: 'https://i.imgur.com/jnWdBqj.png',
+        imgIconUrl: 'https://i.imgur.com/ay0cp6X.png',
+        imgInfo: 'https://youtu.be/RkfzhWcSX2I?t=1301',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-up-1.mp3',
+        audioInfo: 'https://youtu.be/RkfzhWcSX2I?t=1355'
+      },
+      {
+        modeName: 'up-down',
+        imgNormalUrl: 'https://i.imgur.com/xwGmGln.png',
+        imgPopUrl: 'https://i.imgur.com/jnWdBqj.png',
+        imgIconUrl: 'https://i.imgur.com/ay0cp6X.png',
+        imgInfo: 'https://youtu.be/RkfzhWcSX2I?t=1301',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-up-1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-up-2.mp3',
+        audioInfo: 'https://youtu.be/RkfzhWcSX2I?t=1355'
+      },
+      {
+        modeName: 'never-gonna-give',
+        imgNormalUrl: 'https://i.imgur.com/xwGmGln.png',
+        imgPopUrl: 'https://i.imgur.com/jnWdBqj.png',
+        imgIconUrl: 'https://i.imgur.com/ay0cp6X.png',
+        imgInfo: 'https://youtu.be/RkfzhWcSX2I?t=1301',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-gonna-give-1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-gonna-give-2.mp3',
+        audioInfo: 'https://youtu.be/RkfzhWcSX2I?t=1478'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
