@@ -526,7 +526,7 @@ async function insertWaifu () {
         imgNormalUrl: 'https://i.imgur.com/hS5j1nl.png',
         imgPopUrl: 'https://i.imgur.com/9znI7VY.png',
         imgIconUrl: 'https://i.imgur.com/McKysPx.png',
-        imgInfo: 'from herselft',
+        imgInfo: 'from herself',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/boureirabbi-pop.mp3',
         audioInfo: 'https://youtu.be/JdJAU8hTHYc?t=2'
       }
@@ -564,6 +564,94 @@ async function insertWaifu () {
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-gonna-give-1.mp3',
         audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/linglan-never-gonna-give-2.mp3',
         audioInfo: 'https://youtu.be/RkfzhWcSX2I?t=1478'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'ukuruniru',
+    name: '烏庫魯尼魯',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/RB6Q5b8.jpg',
+        imgPopUrl: 'https://i.imgur.com/YHxe0ec.jpg',
+        imgIconUrl: 'https://i.imgur.com/EUnsA4i.png',
+        imgInfo: 'https://youtu.be/aXq2HOvJgS8?t=62',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ukuruniru-pop.mp3',
+        audioInfo: 'https://youtu.be/aXq2HOvJgS8?t=62'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kazari-lua',
+    name: '風莉ルア',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/niAd6BV.jpg',
+        imgPopUrl: 'https://i.imgur.com/8jAsS6R.jpg',
+        imgIconUrl: 'https://i.imgur.com/1xnjioc.png',
+        imgInfo: 'https://twitter.com/Kazari_Lua/status/1415258802459344909 & https://twitter.com/Kazari_Lua/status/1422515979804758018'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'hennnisu',
+    name: 'Hennnisu',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/lWmVLGD.png',
+        imgPopUrl: 'https://i.imgur.com/qaSCOM8.jpg',
+        imgIconUrl: 'https://i.imgur.com/qcbFxG3.png',
+        imgInfo: 'https://youtu.be/gORMDWE9zVQ?t=226',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hennnisu-pop.mp3',
+        audioInfo: 'https://youtu.be/gORMDWE9zVQ?t=226'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'rushia',
+    name: '潤羽るしあ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/RiZ2Z7y.jpg',
+        imgPopUrl: 'https://i.imgur.com/c032cmY.jpg',
+        imgIconUrl: 'https://i.imgur.com/440PpSX.png',
+        imgInfo: 'https://twitter.com/uruharushia/status/1375032797623066624',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/rushia-pop.mp3',
+        audioInfo: 'https://youtu.be/mgEzgLovw8U?t=3943'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'elira',
+    name: 'Elira Pendora',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/g7AAg1Z.png',
+        imgPopUrl: 'https://i.imgur.com/98RqHYy.png',
+        imgIconUrl: 'https://i.imgur.com/TxMkUw3.png',
+        imgInfo: 'https://youtu.be/8NDzqxHzKcU',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/elira-pop.mp3',
+        audioInfo: 'https://youtu.be/SxIYv3er4c0'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'arisuaha',
+    name: '夢姬(ありす)',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/bnJLGZ7.png',
+        imgPopUrl: 'https://i.imgur.com/JCTWcoz.png',
+        imgIconUrl: 'https://i.imgur.com/kbPHvSa.png',
+        imgInfo: 'from herself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/arisuaha-pop.mp3',
+        audioInfo: 'https://youtu.be/y5VW-76MclY'
       }
     ]
   })
