@@ -773,6 +773,36 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'mya',
+    name: '米亞Mya',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/x3XRtAh.png',
+        imgPopUrl: 'https://i.imgur.com/rk4EH8I.png',
+        imgIconUrl: 'https://i.imgur.com/F78vJKs.png',
+        imgInfo: 'https://youtu.be/DYOwcC9x3Vs',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/mya-pop.mp3',
+        audioInfo: 'https://youtu.be/JETAq8w-8DA?t=6165'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'mafumafu',
+    name: 'まふまふ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/26oqRS4.jpg',
+        imgPopUrl: 'https://i.imgur.com/FYNtqsd.png',
+        imgIconUrl: 'https://i.imgur.com/85Yl9O6.png',
+        imgInfo: 'https://youtu.be/xrDruN69QCw',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/mafumafu-pop.mp3',
+        audioInfo: 'https://youtu.be/xrDruN69QCw'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
