@@ -655,6 +655,124 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'tomoe-shirayuki',
+    name: '白雪巴',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/CIk57SG.jpg',
+        imgPopUrl: 'https://i.imgur.com/lrWsNet.jpeg',
+        imgIconUrl: 'https://i.imgur.com/iynwQlM.png',
+        imgInfo: 'from twitter but not sure which tweet ( https://twitter.com/Tomoe_Shirayuki )',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/tomoe-shirayuki-pop-1.mp3',
+        audioInfo: 'https://youtu.be/pGSfEs3ZDDE?t=1423'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'yumeri',
+    name: '夢理',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/yLrN3Yl.png',
+        imgPopUrl: 'https://i.imgur.com/667cSif.png',
+        imgIconUrl: 'https://i.imgur.com/rw0fde5.png',
+        imgInfo: 'from herself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/yumeri-pop.mp3',
+        audioInfo: 'from herself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'rumii',
+    name: '如月ルミィ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/9fKueaa.png',
+        imgPopUrl: 'https://i.imgur.com/nr1vbfi.png',
+        imgIconUrl: 'https://i.imgur.com/jhKFU43.png',
+        imgInfo: 'https://youtu.be/1PooiwI_sK4?t=3228',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/rumii-pop.mp3',
+        audioInfo: 'https://youtu.be/29Bv0SIUCw0?t=432'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'poruko',
+    name: '黒井夜子',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/W90hprs.jpeg',
+        imgPopUrl: 'https://i.imgur.com/lwIum9B.jpeg',
+        imgIconUrl: 'https://i.imgur.com/VfVm5SQ.png',
+        imgInfo: 'from herself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/poruko-pop.mp3',
+        audioInfo: 'from herself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'batsu',
+    name: '荒幽ばつ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/PXrh3CT.png',
+        imgPopUrl: 'https://i.imgur.com/uVQmDkk.png',
+        imgIconUrl: 'https://i.imgur.com/8ouXBU8.png',
+        imgInfo: 'from himself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/batsu-pop.mp3',
+        audioInfo: 'from himself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'beimu',
+    name: '唄姆·拉奇亞',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/Rn8UVJQ.png',
+        imgPopUrl: 'https://i.imgur.com/zX6nRcY.png',
+        imgIconUrl: 'https://i.imgur.com/Rn8UVJQ.png',
+        imgInfo: 'https://youtu.be/F-NKP2G2Q1Q & https://youtu.be/9mloZJYj51E'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'heanna-sumire',
+    name: '平安名 すみれ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/gqZIR2l.png',
+        imgPopUrl: 'https://i.imgur.com/L2bNPYl.jpeg',
+        imgIconUrl: 'https://i.imgur.com/CfCOHAi.png',
+        imgInfo: 'https://www.lovelive-anime.jp/yuigaoka/member/',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/heanna-sumire-pop.mp3',
+        audioInfo: 'https://youtu.be/R2_-weLoIA8'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kaina',
+    name: '灰名Kaina',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/ECPKS1V.jpg',
+        imgPopUrl: 'https://i.imgur.com/QcoKGwg.jpg',
+        imgIconUrl: 'https://i.imgur.com/zxRAgzx.png',
+        imgInfo: 'https://youtu.be/vJTj3ydunlU?t=5',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/kaina-pop.mp3',
+        audioInfo: 'https://youtu.be/lh_pwXsFLhE'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
