@@ -803,6 +803,105 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: '04',
+    name: '零肆04',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/JGvio6g.jpeg',
+        imgPopUrl: 'https://i.imgur.com/aAYd2UM.jpeg',
+        imgIconUrl: 'https://i.imgur.com/Z49V1VN.png',
+        imgInfo: 'from her dc server',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/04-ara.mp3',
+        audioInfo: 'https://www.youtube.com/channel/UCNZyvI_TjyJyBVtdHEsO7HA'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kurita',
+    name: '鼠屋栗太',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/c640G1h.png',
+        imgPopUrl: 'https://i.imgur.com/jD3mDiu.png',
+        imgIconUrl: 'https://i.imgur.com/c640G1h.png',
+        imgInfo: 'https://youtu.be/HXvQlvn2yIk'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'akina',
+    name: '三枝明那',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/UwnbrCt.png',
+        imgPopUrl: 'https://i.imgur.com/VyHgNeA.png',
+        imgIconUrl: 'https://i.imgur.com/64TFeW5.png',
+        imgInfo: 'https://twitter.com/333akina/status/1318927020126990336'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'sukoya',
+    name: '健屋花那',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/LzS580a.jpeg',
+        imgPopUrl: 'https://i.imgur.com/e0Snp2u.jpeg',
+        imgIconUrl: 'https://i.imgur.com/WPRY3W8.png',
+        imgInfo: 'https://youtu.be/APCKILJjG-o 8:59 & 9:20',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/sukoya-pop.mp3',
+        audioInfo: 'from stream'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'speedwagon',
+    name: 'Robert E. O. Speedwagon',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/b6nr5Kg.jpeg',
+        imgPopUrl: 'https://i.imgur.com/xfAWnX4.jpeg',
+        imgIconUrl: 'https://i.imgur.com/xfAWnX4.jpeg',
+        imgInfo: 'JOJO 1'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'akito',
+    name: '緋佐あきと',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/DLX6TF2.png',
+        imgPopUrl: 'https://i.imgur.com/AwYMf6U.png',
+        imgIconUrl: 'https://i.imgur.com/i2j5rhu.png',
+        imgInfo: '',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/akito-pop.mp3',
+        audioInfo: 'https://youtu.be/vGz-FpQE5Eo'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'hkmkmui',
+    name: 'MK妹',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/yVz3gok.png',
+        imgPopUrl: 'https://i.imgur.com/cAggpkt.png',
+        imgIconUrl: 'https://i.imgur.com/uonmjO3.png',
+        imgInfo: 'https://www.youtube.com/channel/UCO62chyehk6pX7OitrnJAUg/',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hkmkmui-pop.mp3',
+        audioInfo: 'https://youtu.be/iNWmaKPzgII?t=71'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
