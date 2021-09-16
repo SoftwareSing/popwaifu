@@ -1017,6 +1017,15 @@ async function insertWaifu () {
         imgPopUrl: 'https://i.imgur.com/wQrOpnU.jpeg',
         imgIconUrl: 'https://i.imgur.com/48YijDf.png',
         imgInfo: 'https://youtu.be/tAvOULiZuHQ?t=12',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ina-wah.mp3',
+        audioInfo: 'https://youtu.be/rqSxHrplZ34?t=174'
+      },
+      {
+        modeName: '2',
+        imgNormalUrl: 'https://i.imgur.com/oVcJL6F.jpeg',
+        imgPopUrl: 'https://i.imgur.com/wQrOpnU.jpeg',
+        imgIconUrl: 'https://i.imgur.com/48YijDf.png',
+        imgInfo: 'https://youtu.be/tAvOULiZuHQ?t=12',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ina-1.mp3',
         audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ina-2.mp3',
         audioInfo: 'https://youtu.be/tAvOULiZuHQ'
@@ -1110,6 +1119,166 @@ async function insertWaifu () {
         imgInfo: 'https://youtu.be/gHompc-T0o8?t=1996',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/katosparrow-pop.mp3',
         audioInfo: 'https://youtu.be/1KPefG31JEs?t=1352'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'belmond-banderas',
+    name: 'ベルモンド・バンデラス',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/PiZFIHQ.jpeg',
+        imgPopUrl: 'https://i.imgur.com/jODoT7u.jpeg',
+        imgIconUrl: 'https://i.imgur.com/ngJEfGx.png',
+        imgInfo: 'https://youtu.be/25h0GVgYCPs?t=4132',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/belmond-banderas-a.mp3',
+        audioInfo: 'https://youtu.be/JOBCw4E6tP0'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'calli',
+    name: 'Mori Calliope',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/WhTx9ct.jpeg',
+        imgPopUrl: 'https://i.imgur.com/4VqiJar.jpeg',
+        imgIconUrl: 'https://i.imgur.com/4VqiJar.jpeg',
+        imgInfo: 'https://knowyourmeme.com/memes/people/mori-calliope/ & https://soundcloud.com/mtell/calliope-mori-rip-mtell-remix',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/calli-pop.mp3',
+        audioInfo: 'https://youtu.be/zxVgPS_sMjM'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'texas',
+    name: '德克薩斯',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/3Gm1rCP.jpeg',
+        imgPopUrl: 'https://i.imgur.com/66SkW00.jpeg',
+        imgIconUrl: 'https://i.imgur.com/wDggRPJ.png',
+        imgInfo: 'Arknights official picture',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/texas-pop.mp3',
+        audioInfo: 'from Arknights game sound'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'mochitsugi-luna',
+    name: '望月ルーナ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/48FUnll.png',
+        imgPopUrl: 'https://i.imgur.com/eY2GOLD.png',
+        imgIconUrl: 'https://i.imgur.com/GXjAEhF.png',
+        imgInfo: 'from vt ( https://twitter.com/luna_mochitsugi )',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/mochitsugi-luna-pop.mp3',
+        audioInfo: 'https://youtu.be/wOhgSsoy-y0?t=4570'
+      },
+      {
+        modeName: 'cat',
+        imgNormalUrl: 'https://i.imgur.com/LbgJOnC.png',
+        imgPopUrl: 'https://i.imgur.com/5Visr31.png',
+        imgIconUrl: 'https://i.imgur.com/8byXuRY.png',
+        imgInfo: 'from vt ( https://twitter.com/luna_mochitsugi )',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/mochitsugi-luna-pop.mp3',
+        audioInfo: 'https://youtu.be/wOhgSsoy-y0?t=4570'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'enn',
+    name: 'Enn Sings',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/NCiK3Q2.png',
+        imgPopUrl: 'https://i.imgur.com/lL7vZbg.png',
+        imgIconUrl: 'https://i.imgur.com/NCiK3Q2.png',
+        imgInfo: 'https://youtu.be/7txXTRX2oe8?t=3',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/enn-1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/enn-2.mp3',
+        audioInfo: 'https://youtu.be/ShXRVPLFdxo?t=2525 & https://youtu.be/h1Dr4B3rBII?t=2683'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kagamihayato',
+    name: '加賀美 ハヤト',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/YgeXyUZ.png',
+        imgPopUrl: 'https://i.imgur.com/SvzuxPA.png',
+        imgIconUrl: 'https://i.imgur.com/YgeXyUZ.png',
+        imgInfo: 'https://zh.moegirl.org.cn/%E5%8A%A0%E8%B4%BA%E7%BE%8E%E9%9A%BC%E4%BA%BA',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/kagamihayato-pop.mp3',
+        audioInfo: 'https://youtu.be/4-jpsUKO50I?t=50'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'shien',
+    name: '影山シエン',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/wmhlzK3.png',
+        imgPopUrl: 'https://i.imgur.com/ZfDIW7Q.png',
+        imgIconUrl: 'https://i.imgur.com/dpwLvVm.png',
+        imgInfo: 'https://youtu.be/fLC438LIDwE 18:35 ＆ 19:37',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/shien-pop.mp3',
+        audioInfo: 'https://youtu.be/sA6o0aTnn1w'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'noel',
+    name: '白銀ノエル',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/5XRGCn8.jpg',
+        imgPopUrl: 'https://i.imgur.com/wYmnRYS.jpg',
+        imgIconUrl: 'https://i.imgur.com/Q7G5BKK.png',
+        imgInfo: 'https://twitter.com/illustr_speaker/status/1434835933828829188 & https://twitter.com/shiroganenoel/status/1437024594896965639',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/noel-a.mp3',
+        audioInfo: 'https://youtu.be/RE73Alg-2WQ'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'yuma-tsukumo',
+    name: '九十九遊馬',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/8ekGM2G.jpg',
+        imgPopUrl: 'https://i.imgur.com/xOojm31.png',
+        imgIconUrl: 'https://i.imgur.com/JxUbOI4.png',
+        imgInfo: 'https://twitter.com/KonamiUK/status/1310862999968776 & https://yugioh.fandom.com/wiki/ZEXAL_(Duel_Links)',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/yuma-tsukumo-pop.mp3',
+        audioInfo: 'https://youtu.be/R5MrpJ3NN8c'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: '4virtual-tedobear',
+    name: '4Virtual TedoBear 泰多貝亞',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/I9ekJWq.png',
+        imgPopUrl: 'https://i.imgur.com/dj2pfZh.png',
+        imgIconUrl: 'https://i.imgur.com/dj2pfZh.png',
+        imgInfo: 'https://www.youtube.com/c/4VirtualTedoBear%E6%B3%B0%E5%A4%9A%E8%B2%9D%E4%BA%9E',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/4virtual-tedobear-pop.mp3',
+        audioInfo: 'from his discord server'
       }
     ]
   })
