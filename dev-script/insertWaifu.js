@@ -1378,6 +1378,127 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'mikotosatsuki5',
+    name: '水琴五月',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/cIox86r.jpg',
+        imgPopUrl: 'https://i.imgur.com/HVCbvhf.jpg',
+        imgIconUrl: 'https://i.imgur.com/UPS9x9W.png',
+        imgInfo: 'https://youtu.be/In163jajImU',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/mikotosatsuki5-pop-1.mp3',
+        audioInfo: 'https://youtu.be/In163jajImU'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'temma',
+    name: '岸堂天真',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/rc29QWY.jpeg',
+        imgPopUrl: 'https://i.imgur.com/ktkhhro.jpeg',
+        imgIconUrl: 'https://i.imgur.com/s7hnCM8.png',
+        imgInfo: 'https://youtu.be/BXZExVa8mWw?t=2053',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/temma-pop.mp3',
+        audioInfo: 'https://youtu.be/BXZExVa8mWw?t=2053'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kakeru-yumeoi',
+    name: '夢追翔',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/5iiAXrA.png',
+        imgPopUrl: 'https://i.imgur.com/8UhFqoM.png',
+        imgIconUrl: 'https://i.imgur.com/dmrMVG2.png',
+        imgInfo: 'https://youtu.be/aa8uvG2mENg?t=2865',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/kakeru-yumeoi-pop.mp3',
+        audioInfo: 'https://youtu.be/Y5BH8by8P0Y'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'adano',
+    name: '雅達諾',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/FCpDkUc.png',
+        imgPopUrl: 'https://i.imgur.com/n1HAbd8.png',
+        imgIconUrl: 'https://i.imgur.com/FCpDkUc.png',
+        imgInfo: 'from himself ( https://twitter.com/Adano1124 )',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/adano-pop.mp3',
+        audioInfo: 'from himself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'miyabi',
+    name: '花咲みやび',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/r2Z5lC0.png',
+        imgPopUrl: 'https://i.imgur.com/6IhKWE3.jpg',
+        imgIconUrl: 'https://i.imgur.com/r2Z5lC0.png',
+        imgInfo: 'https://youtu.be/wpZ7WKdKzYs?t=5753 & https://twitter.com/miyabihanasaki/status/1352270151794585603',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/miyabi-pop.mp3',
+        audioInfo: 'https://youtu.be/q6TctPzm0gc?t=2690'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'cheukcat',
+    name: '綽貓喵',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/DYI8BrY.png',
+        imgPopUrl: 'https://i.imgur.com/vMRTHsW.png',
+        imgIconUrl: 'https://i.imgur.com/6HBSnD6.png',
+        imgInfo: 'https://youtu.be/K1IoGZmA3aw?t=2950',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/cheukcat1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/cheukcat2.mp3',
+        audioInfo: 'https://youtu.be/K1IoGZmA3aw?t=2950'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'astel',
+    name: 'アステル・レダ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/DpTCLTT.jpg',
+        imgPopUrl: 'https://i.imgur.com/qgfiK2s.jpg',
+        imgIconUrl: 'https://i.imgur.com/tZc2L2l.png',
+        imgInfo: 'https://youtu.be/n0lGTyvTE8w?t=493 & https://youtu.be/n0lGTyvTE8w?t=714',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/astel-pop.mp3',
+        audioInfo: 'https://youtu.be/D1g3BNbbDsw?t=1970'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'canis',
+    name: '阿狗Canis',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/RY8uO0R.jpg',
+        imgPopUrl: 'https://i.imgur.com/R1n5vEN.jpg',
+        imgIconUrl: 'https://i.imgur.com/RY8uO0R.jpg',
+        imgInfo: 'https://youtu.be/q9KuTDMfMow?t=4857',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/canis-pop.mp3',
+        audioInfo: 'https://youtu.be/WsngdvtmngE'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
