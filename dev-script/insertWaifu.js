@@ -1282,6 +1282,102 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'otoki',
+    name: '音軌オトキ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/PZMinL0.png',
+        imgPopUrl: 'https://i.imgur.com/6AvHjKu.png',
+        imgIconUrl: 'https://i.imgur.com/HvjiPAC.png',
+        imgInfo: 'https://youtu.be/91EH1QqQGOo',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/otoki-pop-1.mp3',
+        audioInfo: 'https://youtu.be/Gs4fLsT7Sa4'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'gaku-fushimi',
+    name: '伏見ガク',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/skOkNdc.png',
+        imgPopUrl: 'https://i.imgur.com/Yqf0lgY.png',
+        imgIconUrl: 'https://i.imgur.com/fmZGCIK.png',
+        imgInfo: 'https://www.nijisanji.jp/members/gaku-fushimi & https://twitter.com/gaku_fushimi/status/1048229997553496064',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/gaku-fushimi-pop.mp3',
+        audioInfo: 'https://youtu.be/dXEotJJGb5I'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'nene',
+    name: '桃鈴ねね',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/KKECSds.png',
+        imgPopUrl: 'https://i.imgur.com/ubcdrpZ.png',
+        imgIconUrl: 'https://i.imgur.com/IpfR7CO.png',
+        imgInfo: 'https://youtu.be/oSrcIh-_4VE?t=524 & https://youtu.be/oSrcIh-_4VE?t=462',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/nene-seal-ow1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/nene-seal-slap.mp3',
+        audioInfo: 'https://youtu.be/_BqDWHzripE?t=10724'
+      },
+      {
+        modeName: '2',
+        imgNormalUrl: 'https://i.imgur.com/KKECSds.png',
+        imgPopUrl: 'https://i.imgur.com/ubcdrpZ.png',
+        imgIconUrl: 'https://i.imgur.com/IpfR7CO.png',
+        imgInfo: 'https://youtu.be/oSrcIh-_4VE?t=524 & https://youtu.be/oSrcIh-_4VE?t=462',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/nene-seal-ow2.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/nene-seal-slap.mp3',
+        audioInfo: 'https://youtu.be/jQMdS0Jlql4?t=9671'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'pekora',
+    name: '兎田ぺこら',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/lHYkhg6.png',
+        imgPopUrl: 'https://i.imgur.com/jJE00Fy.png',
+        imgIconUrl: 'https://i.imgur.com/0HU6ees.png',
+        imgInfo: 'https://youtu.be/D9mQf56453I?t=1043 & https://youtu.be/D9mQf56453I?t=1067',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/pekora-peko.mp3',
+        audioInfo: 'https://youtu.be/ZCjV0CL7evQ?t=10033'
+      },
+      {
+        modeName: 'domo',
+        imgNormalUrl: 'https://i.imgur.com/5KeAAB6.png',
+        imgPopUrl: 'https://i.imgur.com/Wr5xs1t.png',
+        imgIconUrl: 'https://i.imgur.com/my2tS86.png',
+        imgInfo: 'https://youtu.be/dNZ5mCX2Eds?t=283 & https://youtu.be/dNZ5mCX2Eds?t=9046',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/pekora-domo-amo.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/pekora-domo-do.mp3',
+        audioInfo: 'https://youtu.be/NZpCdpjuAB0?t=120'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'woof-woffle',
+    name: '嗚夫沃夫',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/W0nKrsD.png',
+        imgPopUrl: 'https://i.imgur.com/7AP03y9.png',
+        imgIconUrl: 'https://i.imgur.com/WJC0aof.png',
+        imgInfo: 'https://youtu.be/Q3PQFGXMTIM?t=1429',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/woof-woffle-pop.mp3',
+        audioInfo: 'unknow'
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
