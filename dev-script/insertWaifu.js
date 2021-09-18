@@ -1309,6 +1309,15 @@ async function insertWaifu () {
         imgInfo: 'https://www.nijisanji.jp/members/gaku-fushimi & https://twitter.com/gaku_fushimi/status/1048229997553496064',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/gaku-fushimi-pop.mp3',
         audioInfo: 'https://youtu.be/dXEotJJGb5I'
+      },
+      {
+        modeName: '2',
+        imgNormalUrl: 'https://i.imgur.com/ljuO1ak.jpeg',
+        imgPopUrl: 'https://i.imgur.com/CPofd9d.jpeg',
+        imgIconUrl: 'https://i.imgur.com/aK9t9pW.png',
+        imgInfo: 'https://youtu.be/f_T8M75ACZ8 38:08 & 55:10',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/gaku-fushimi-2-pop.mp3',
+        audioInfo: 'https://youtu.be/FfWSRPfs16s'
       }
     ]
   })
@@ -1496,6 +1505,89 @@ async function insertWaifu () {
         imgInfo: 'https://youtu.be/q9KuTDMfMow?t=4857',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/canis-pop.mp3',
         audioInfo: 'https://youtu.be/WsngdvtmngE'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'yumesakimia',
+    name: '夢咲ミア',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/S80qEJN.png',
+        imgPopUrl: 'https://i.imgur.com/pHR73Hh.png',
+        imgIconUrl: 'https://i.imgur.com/S80qEJN.png',
+        imgInfo: 'https://youtu.be/5pHBtyO4xNU 0:13 & 0:03',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/yumesakimia-pop.mp3',
+        audioInfo: 'https://youtu.be/5pHBtyO4xNU'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'oliver-evans',
+    name: 'オリバー・エバンス',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/2A1aZ92.jpg',
+        imgPopUrl: 'https://i.imgur.com/bhvvmG3.jpg',
+        imgIconUrl: 'https://i.imgur.com/p1AmjtU.png',
+        imgInfo: 'https://youtu.be/xUJJF6fbSR8?t=1349'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'suisei',
+    name: '星街すいせい',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/AG0J0Tp.png',
+        imgPopUrl: 'https://i.imgur.com/TPluqIa.png',
+        imgIconUrl: 'https://i.imgur.com/JzWtwku.png',
+        imgInfo: 'https://youtu.be/hq-AsszEZIo',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-pop.mp3',
+        audioInfo: 'https://youtu.be/hq-AsszEZIo'
+      },
+      {
+        modeName: 'kyomo',
+        imgNormalUrl: 'https://i.imgur.com/ToPppcW.png',
+        imgPopUrl: 'https://i.imgur.com/An7qbno.png',
+        imgIconUrl: 'https://i.imgur.com/6weT0Ex.png',
+        imgInfo: 'https://youtu.be/HZmPB0f3cbI?t=53',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-kyomo.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-kawaii.mp3',
+        audioInfo: 'https://youtu.be/Xn6fzMAOZFs?t=194 & https://youtu.be/i7oDE-5Q-5o?t=275'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'ame',
+    name: 'Watson Amelia',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/qKszJAy.jpeg',
+        imgPopUrl: 'https://i.imgur.com/MzewfJb.jpeg',
+        imgIconUrl: 'https://i.imgur.com/qKszJAy.jpeg',
+        imgInfo: '',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ame-weee.mp3',
+        audioInfo: 'https://youtu.be/f2lYmGRQq9M?t=1207'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'lei-on-lion',
+    name: '莉安Lion',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/AsHGNUz.jpg',
+        imgPopUrl: 'https://i.imgur.com/hYfQXpL.jpg',
+        imgIconUrl: 'https://i.imgur.com/5K6BKvT.png',
+        imgInfo: 'from her discord server',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/lei-on-lion-pop.mp3',
+        audioInfo: 'https://youtu.be/HDaJXxvmDmE'
       }
     ]
   })
