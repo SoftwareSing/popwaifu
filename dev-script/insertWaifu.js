@@ -1558,6 +1558,16 @@ async function insertWaifu () {
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-kyomo.mp3',
         audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-kawaii.mp3',
         audioInfo: 'https://youtu.be/Xn6fzMAOZFs?t=194 & https://youtu.be/i7oDE-5Q-5o?t=275'
+      },
+      {
+        modeName: 'ressha',
+        imgNormalUrl: 'https://i.imgur.com/xy2RLDJ.png',
+        imgPopUrl: 'https://i.imgur.com/7EoGqLX.png',
+        imgIconUrl: 'https://i.imgur.com/bvF03rT.png',
+        imgInfo: 'https://youtu.be/ZWTuQnb9wq0?t=21 & https://youtu.be/ZWTuQnb9wq0?t=25',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-ressha-shu1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-ressha-shu2.mp3',
+        audioInfo: 'https://youtu.be/KGj0re0whzA?t=2214'
       }
     ]
   })
@@ -1588,6 +1598,152 @@ async function insertWaifu () {
         imgInfo: 'from her discord server',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/lei-on-lion-pop.mp3',
         audioInfo: 'https://youtu.be/HDaJXxvmDmE'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'megumin',
+    name: 'めぐみん',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/s8H5dIH.jpg',
+        imgPopUrl: 'https://i.imgur.com/ndhrghU.png',
+        imgIconUrl: 'https://i.imgur.com/lH5CqtV.png',
+        imgInfo: 'https://youtu.be/eKEgWoxSLl4?t=6 & https://youtu.be/Q4FQUMcYqiQ?t=10',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/megumin-explosion.mp3',
+        audioInfo: 'https://youtu.be/Q4FQUMcYqiQ?t=2'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'aqua',
+    name: 'あくあ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/P8KGJFp.jpg',
+        imgPopUrl: 'https://i.imgur.com/mc2h9sC.jpg',
+        imgIconUrl: 'https://i.imgur.com/tBvuWEC.png',
+        imgInfo: '',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/aqua-pop.mp3',
+        audioInfo: 'https://youtu.be/HjjKAsi6pis?t=57'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'watame',
+    name: '角巻わため',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/P1Jn88e.png',
+        imgPopUrl: 'https://i.imgur.com/CM1iMVE.jpg',
+        imgIconUrl: 'https://i.imgur.com/ZnXi79M.png',
+        imgInfo: 'https://www.reddit.com/r/VirtualYoutubers/comments/gpq0zw/tsunomaki_watame_by_fukahire/',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/watame-pop.mp3',
+        audioInfo: 'https://youtu.be/x6hem8vmH4M'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'riksa',
+    name: 'Riksa Dhirendra',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/aXx7qze.jpg',
+        imgPopUrl: 'https://i.imgur.com/3djOLsw.jpg',
+        imgIconUrl: 'https://i.imgur.com/aXx7qze.jpg',
+        imgInfo: 'https://twitter.com/RiksaDhirendra/status/1265173609724567552',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/riksa-pop.mp3',
+        audioInfo: 'https://youtu.be/L7rTTbibXB8'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'scaramouche',
+    name: 'Scaramouche (genshinimpact)',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/UpIXqhv.jpeg',
+        imgPopUrl: 'https://i.imgur.com/33JfTs9.jpeg',
+        imgIconUrl: 'https://i.imgur.com/yAEl6Et.png',
+        imgInfo: 'The cut scenes from Genshinimpact ',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/scaramouche-pop.mp3',
+        audioInfo: 'Game Genshinimpact'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'toba-rana',
+    name: '鳥羽樂奈',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/LYUWs56.jpeg',
+        imgPopUrl: 'https://i.imgur.com/cTGhYB7.jpeg',
+        imgIconUrl: 'https://i.imgur.com/nxLdZFe.png',
+        imgInfo: 'https://www.facebook.com/RanaVtb/photos/?tab=album&album_id=111705640746455&ref=page_internal&mt_nav=1'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kiyoshi',
+    name: '夏樹きよし',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/tE6VoVu.png',
+        imgPopUrl: 'https://i.imgur.com/WMybtrq.png',
+        imgIconUrl: 'https://i.imgur.com/qgbsAan.png',
+        imgInfo: 'https://youtube.com/channel/UCApwCqmHCddqQkAObr-CqdQ',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/kiyoshi-pop.mp3',
+        audioInfo: 'https://youtu.be/75V4i_IZBXE'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'chengmi',
+    name: '橙米',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/DYlk6fR.png',
+        imgPopUrl: 'https://i.imgur.com/8pFwzBL.png',
+        imgIconUrl: 'https://i.imgur.com/lwx6QBf.png',
+        imgInfo: 'from herself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/chengmi-pop.mp3',
+        audioInfo: 'from herself'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'toyakenmochi',
+    name: '剣持刀也',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/dKETUP8.jpeg',
+        imgPopUrl: 'https://i.imgur.com/lQcW1FH.jpeg',
+        imgIconUrl: 'https://i.imgur.com/4o2DFgv.png',
+        imgInfo: 'https://twitter.com/rei_toya_rei/status/1419696268561948678'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'kasasagi',
+    name: '姬野鵲',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/tEL1MOi.jpg',
+        imgPopUrl: 'https://i.imgur.com/DSFgVFz.jpg',
+        imgIconUrl: 'https://i.imgur.com/hl2gxWK.png',
+        imgInfo: 'https://youtu.be/_8E0N6SjZvo',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/kasasagi-pop.mp3',
+        audioInfo: 'https://youtu.be/_8E0N6SjZvo'
       }
     ]
   })
