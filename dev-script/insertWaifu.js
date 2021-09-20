@@ -1568,6 +1568,16 @@ async function insertWaifu () {
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-ressha-shu1.mp3',
         audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-ressha-shu2.mp3',
         audioInfo: 'https://youtu.be/KGj0re0whzA?t=2214'
+      },
+      {
+        modeName: 'hi-honey',
+        imgNormalUrl: 'https://i.imgur.com/fxjCnhH.png',
+        imgPopUrl: 'https://i.imgur.com/w4OJI3r.png',
+        imgIconUrl: 'https://i.imgur.com/tKNPCai.png',
+        imgInfo: 'https://youtu.be/VTyhCpNSMtc',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-hi-honey-hi.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-hi-honey-honey.mp3',
+        audioInfo: 'https://youtu.be/MvaMY_92T-c?t=3932'
       }
     ]
   })
@@ -1637,10 +1647,10 @@ async function insertWaifu () {
     modeConfigList: [
       {
         modeName: 'default',
-        imgNormalUrl: 'https://i.imgur.com/P1Jn88e.png',
-        imgPopUrl: 'https://i.imgur.com/CM1iMVE.jpg',
+        imgNormalUrl: 'https://i.imgur.com/tiTPdnY.png',
+        imgPopUrl: 'https://i.imgur.com/e7W3LdL.png',
         imgIconUrl: 'https://i.imgur.com/ZnXi79M.png',
-        imgInfo: 'https://www.reddit.com/r/VirtualYoutubers/comments/gpq0zw/tsunomaki_watame_by_fukahire/',
+        imgInfo: 'https://virtualyoutuber.fandom.com/wiki/Tsunomaki_Watame',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/watame-pop.mp3',
         audioInfo: 'https://youtu.be/x6hem8vmH4M'
       }
@@ -1744,6 +1754,156 @@ async function insertWaifu () {
         imgInfo: 'https://youtu.be/_8E0N6SjZvo',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/kasasagi-pop.mp3',
         audioInfo: 'https://youtu.be/_8E0N6SjZvo'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'engineer-teamfortress',
+    name: 'Engineer',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/MaXM6FG.jpg',
+        imgPopUrl: 'https://i.imgur.com/d0ZTqst.jpg',
+        imgIconUrl: 'https://i.imgur.com/muaku4V.png',
+        imgInfo: 'https://youtu.be/gvdf5n-zI14',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/engineer-teamfortress-nope.mp3',
+        audioInfo: 'https://wiki.teamfortress.com/w/images/b/bd/Engineer_no01.wav'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'tojiro-genzuki',
+    name: '弦月藤士郎',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/GIKan10.png',
+        imgPopUrl: 'https://i.imgur.com/Mn2FyCV.png',
+        imgIconUrl: 'https://i.imgur.com/M9S3Ldo.png',
+        imgInfo: 'https://twitter.com/1O46V/status/1246401408854720519',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/tojiro-genzuki-pop.mp3',
+        audioInfo: 'https://youtu.be/tiMt4d6Xgyc'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'artemis',
+    name: 'Artemis',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/OU9x7Iz.png',
+        imgPopUrl: 'https://i.imgur.com/MGPG5DK.png',
+        imgIconUrl: 'https://i.imgur.com/MGPG5DK.png',
+        imgInfo: 'https://youtu.be/Ww8fbtFgxPY?t=384',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/artemis-pop.mp3',
+        audioInfo: 'https://youtu.be/Ww8fbtFgxPY?t=422'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'fujinokuma',
+    name: '藤乃熊',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/NQ0AaH5.png',
+        imgPopUrl: 'https://i.imgur.com/tw6eef0.png',
+        imgIconUrl: 'https://i.imgur.com/tw6eef0.png',
+        imgInfo: '',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/fujinokuma-pop.mp3',
+        audioInfo: ''
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'yoshizuki-meguru',
+    name: 'ヨシヅキ参謀',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/nkWCEYV.png',
+        imgPopUrl: 'https://i.imgur.com/SqYKRx0.png',
+        imgIconUrl: 'https://i.imgur.com/3FWAZWU.png',
+        imgInfo: 'https://youtu.be/8Fb5l02xPJc 08:30 & 14:33',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/yoshizuki-meguru-pop.mp3',
+        audioInfo: 'https://youtu.be/elDHHMzFQmw'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'arashi',
+    name: '神無月嵐',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/BpTq2oC.png',
+        imgPopUrl: 'https://i.imgur.com/AgH4h6J.png',
+        imgIconUrl: 'https://i.imgur.com/zv7ZroT.png',
+        imgInfo: 'https://youtu.be/yBdQ5TEfi_Y',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/arashi-pop.mp3',
+        audioInfo: 'from stream'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'mayuri-shiina',
+    name: '椎名 まゆり',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/ObXK6DV.png',
+        imgPopUrl: 'https://i.imgur.com/H69aiOS.png',
+        imgIconUrl: 'https://i.imgur.com/HPa2YTk.png',
+        imgInfo: 'Steins;Gate 01 9:54',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/mayuri-shiina-pop.mp3',
+        audioInfo: 'Steins;Gate 01 9:54'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'shellin',
+    name: 'シェリン',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/oo5UkYC.jpeg',
+        imgPopUrl: 'https://i.imgur.com/2PDLiDf.jpeg',
+        imgIconUrl: 'https://i.imgur.com/w9ixUHU.png',
+        imgInfo: 'https://youtu.be/6Pd0xCRW7aU?t=2333',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/shellin-pop.mp3',
+        audioInfo: 'https://youtu.be/mOaY7pqOpn4?t=8146'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'toko-inui',
+    name: '戌亥とこ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/wZi6mM3.jpeg',
+        imgPopUrl: 'https://i.imgur.com/wmpqhPm.jpeg',
+        imgIconUrl: 'https://i.imgur.com/wmpqhPm.jpeg',
+        imgInfo: 'https://youtu.be/_5kOWmcvfa0',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/toko-inui-pop.mp3',
+        audioInfo: 'https://youtu.be/CMK7d-JV4fQ'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'misaka',
+    name: '御坂美琴',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/WNDze6L.jpg',
+        imgPopUrl: 'https://i.imgur.com/J0FT4y7.png',
+        imgIconUrl: 'https://i.imgur.com/GjMoAzd.png',
+        imgInfo: 'A Certain Scientific Railgun T 21 07:50',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/misaka-bilibili.mp3',
+        audioInfo: 'A Certain Magical Index 01 19:05'
       }
     ]
   })
