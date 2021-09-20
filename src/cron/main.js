@@ -2,8 +2,6 @@ const cron = require('node-cron')
 const Mongodb = require('~common/connection/Mongodb')
 const { disconnectRedis } = require('~common/connection/redis')
 
-const { removeOldPopLog } = require('./removeOldPopLog')
-
 const taskList = []
 const runningSet = new Set()
 
@@ -20,7 +18,7 @@ async function main () {
   // │ │ │ │ │ │
   // * * * * * *
 
-  schedule('0 0 * * * *', removeOldPopLog)
+  schedule('0 0 * * * *', () => console.log('example cron'))
 }
 
 function schedule (expression, func) {

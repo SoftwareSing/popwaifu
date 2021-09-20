@@ -1,5 +1,4 @@
 const Mongodb = require('~common/connection/Mongodb')
-const PopLogModel = require('~entity/popLog/PopLogModel')
 const WaifuModel = require('~entity/waifu/WaifuModel')
 
 async function run () {
@@ -9,7 +8,7 @@ async function run () {
 }
 
 async function syncIndex () {
-  for (const model of [PopLogModel, WaifuModel]) {
+  for (const model of [WaifuModel]) {
     await model.syncIndexes()
   }
 }
