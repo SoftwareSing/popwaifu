@@ -7,10 +7,11 @@ Frontend project is on [popwaifu-web](https://github.com/SoftwareSing/popwaifu-w
 
 1. Install Node.js  
    I use 14.17.6 when writing this, recommend using [NVM](https://github.com/nvm-sh/nvm) to install Node.js
-2. git clone this project
-3. run `npm install`
-4. run `npm run build_web` to build frontend file
-5. run `npm run server_dev` to start a develop server
+2. Install MongoDB and Redis
+3. git clone this project
+4. run `npm install`
+5. run `npm run build_web` to build frontend file
+6. run `npm run server_dev` to start a develop server
 
 ## file architecture
 
