@@ -1353,9 +1353,9 @@ async function insertWaifu () {
     modeConfigList: [
       {
         modeName: 'default',
-        imgNormalUrl: 'https://i.imgur.com/lHYkhg6.png',
-        imgPopUrl: 'https://i.imgur.com/jJE00Fy.png',
-        imgIconUrl: 'https://i.imgur.com/0HU6ees.png',
+        imgNormalUrl: 'https://i.imgur.com/LE0MF2t.png',
+        imgPopUrl: 'https://i.imgur.com/g26gl5p.png',
+        imgIconUrl: 'https://i.imgur.com/IYYOtV1.png',
         imgInfo: 'https://youtu.be/D9mQf56453I?t=1043 & https://youtu.be/D9mQf56453I?t=1067',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/pekora-peko.mp3',
         audioInfo: 'https://youtu.be/ZCjV0CL7evQ?t=10033'
@@ -1578,6 +1578,16 @@ async function insertWaifu () {
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-hi-honey-hi.mp3',
         audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-hi-honey-honey.mp3',
         audioInfo: 'https://youtu.be/MvaMY_92T-c?t=3932'
+      },
+      {
+        modeName: 'hehehe',
+        imgNormalUrl: 'https://i.imgur.com/EjUIZDb.png',
+        imgPopUrl: 'https://i.imgur.com/KGaBnA4.png',
+        imgIconUrl: 'https://i.imgur.com/D44zTwd.png',
+        imgInfo: 'https://youtu.be/mqr1eP25vg4?t=205 & https://youtu.be/mqr1eP25vg4?t=1357',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-hehehe1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/suisei-hehehe2.mp3',
+        audioInfo: 'https://suisei.moe/ & https://github.com/suisei-cn/sbtn-assets/blob/d51be385f10ebb7d4f89dec9cb2ba9d1efb0ade4/assets/ehhh.mp3'
       }
     ]
   })
@@ -1904,6 +1914,195 @@ async function insertWaifu () {
         imgInfo: 'A Certain Scientific Railgun T 21 07:50',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/misaka-bilibili.mp3',
         audioInfo: 'A Certain Magical Index 01 19:05'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'proose',
+    name: '布魯斯',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/Bsb3vXc.jpeg',
+        imgPopUrl: 'https://i.imgur.com/AyQUUAn.jpg',
+        imgIconUrl: 'https://i.imgur.com/Bsb3vXc.jpeg',
+        imgInfo: 'https://twitter.com/purusu0325',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/proose-pop.mp3',
+        audioInfo: 'https://youtu.be/6DhLk_3qypk?t=30'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'shiroisatou',
+    name: '白色砂糖シロイサトウ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/yckAwkR.jpeg',
+        imgPopUrl: 'https://i.imgur.com/fdwVTQz.jpeg',
+        imgIconUrl: 'https://i.imgur.com/yckAwkR.jpeg',
+        imgInfo: 'https://www.youtube.com/c/%E7%99%BD%E8%89%B2%E7%A0%82%E7%B3%96%E3%82%B7%E3%83%AD%E3%82%A4%E3%82%B5%E3%83%88%E3%82%A6/videos'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'fuwaminato',
+    name: '不破湊',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/pdVzoCx.png',
+        imgPopUrl: 'https://i.imgur.com/LF70VvG.png',
+        imgIconUrl: 'https://i.imgur.com/R6JuFrp.jpg',
+        imgInfo: 'https://youtu.be/qEnOCFh6v-E?t=1500',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/fuwaminato-pop.mp3',
+        audioInfo: 'https://youtu.be/DMC2lq5PpRM'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'axia-krone',
+    name: 'アクシア・クローネ',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/Gmi0fNQ.jpeg',
+        imgPopUrl: 'https://i.imgur.com/LKgXzQS.jpeg',
+        imgIconUrl: 'https://i.imgur.com/mBj7ds0.jpg',
+        imgInfo: 'https://youtu.be/0WdiSlrvmDk?t=116',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/axia-krone-pop.mp3',
+        audioInfo: 'https://youtu.be/kkKdenmXcX4'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'healing',
+    name: 'Healing Ch.希靈',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/Xzpf4Te.jpeg',
+        imgPopUrl: 'https://i.imgur.com/hoq5A5j.jpeg',
+        imgIconUrl: 'https://i.imgur.com/QBPV7DI.jpg',
+        imgInfo: 'https://home.gamer.com.tw/artwork.php?sn=5097688',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/healing-pop.mp3',
+        audioInfo: 'https://youtu.be/J0Opg0RaUFY'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'duca',
+    name: 'Hibiki Du Ca',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/7iSHzw1.png',
+        imgPopUrl: 'https://i.imgur.com/mPbbuH9.png',
+        imgIconUrl: 'https://i.imgur.com/Gj5RlA5.jpg',
+        imgInfo: 'https://youtu.be/p51k0fTQs6k',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/duca-pop.mp3',
+        audioInfo: 'https://youtu.be/p51k0fTQs6k'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'catandcanned',
+    name: '小羯貓貓',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/BvgFmyH.png',
+        imgPopUrl: 'https://i.imgur.com/MCPymKB.png',
+        imgIconUrl: 'https://i.imgur.com/Qmx8aoC.jpg',
+        imgInfo: 'https://youtu.be/H1bcoSBHjEc?t=10698',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/catandcanned-pop-1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/catandcanned-pop-2.mp3',
+        audioInfo: 'https://youtu.be/H1bcoSBHjEc?t=10698'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'izuru',
+    name: '奏手イヅル',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/HIXyWLY.jpg',
+        imgPopUrl: 'https://i.imgur.com/3byTEyE.jpg',
+        imgIconUrl: 'https://i.imgur.com/zOVrVEN.jpg',
+        imgInfo: 'https://youtu.be/c9zeQriSTAU',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/izuru-pop.mp3',
+        audioInfo: 'https://twitter.com/i/status/1390107245703307266'
+      },
+      {
+        modeName: '2',
+        imgNormalUrl: 'https://i.imgur.com/HI8SA2p.jpeg',
+        imgPopUrl: 'https://i.imgur.com/KpBVQdD.jpeg',
+        imgIconUrl: 'https://i.imgur.com/fbbfMIn.jpg',
+        imgInfo: 'https://youtu.be/rnTQ47UOCrw?t=148 & https://youtu.be/NM6Qi1PM2Kw?t=1146',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/izuru-2-pop.mp3',
+        audioInfo: 'https://youtu.be/NM6Qi1PM2Kw?t=1596'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'petra',
+    name: 'Petra Gurin',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/wy5CByt.jpeg',
+        imgPopUrl: 'https://i.imgur.com/tdvuFOK.png',
+        imgIconUrl: 'https://i.imgur.com/hqdQaR4.jpg',
+        imgInfo: 'https://www.youtube.com/channel/UCgA2jKRkqpY_8eysPUs8sjw (Profile pic) & https://twitter.com/petra_gurin/status/1418611909247471619',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/petra-pop.mp3',
+        audioInfo: 'https://youtu.be/VOAOtZ5xPng'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'aonezutarou',
+    name: '葵鼠たろう',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/o3366oI.png',
+        imgPopUrl: 'https://i.imgur.com/4WUSGkG.png',
+        imgIconUrl: 'https://i.imgur.com/AX09Zbd.jpg',
+        imgInfo: 'from himself',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/aonezutarou-pop.mp3',
+        audioInfo: 'https://youtu.be/muXxTI08hls?t=45'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'ollie',
+    name: 'Kureiji Ollie',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/bUDLayJ.png',
+        imgPopUrl: 'https://i.imgur.com/8hTYDnX.png',
+        imgIconUrl: 'https://i.imgur.com/sQhawan.png',
+        imgInfo: 'https://youtu.be/kzNzUK3xQto?t=1773',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ollie-kukuku1.mp3',
+        audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/ollie-kukuku2.mp3',
+        audioInfo: 'https://youtu.be/HT9UrfTYsB4?t=161'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'amaha-ari',
+    name: '天葉亞里',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/rNMZ1dz.jpg',
+        imgPopUrl: 'https://i.imgur.com/8WhVGqf.jpg',
+        imgIconUrl: 'https://i.imgur.com/vW2TjJH.jpg',
+        imgInfo: 'https://youtu.be/HVu67hLqJQo',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/amaha-ari-pop.mp3',
+        audioInfo: 'https://youtu.be/HVu67hLqJQo'
       }
     ]
   })
