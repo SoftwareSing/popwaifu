@@ -2106,6 +2106,21 @@ async function insertWaifu () {
       }
     ]
   })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'lutra',
+    name: '露恰露恰',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/wZ4QiDW.png',
+        imgPopUrl: 'https://i.imgur.com/oPObhTE.png',
+        imgIconUrl: 'https://i.imgur.com/CotAGfV.png',
+        imgInfo: '',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/lutra-hota.mp3',
+        audioInfo: ''
+      }
+    ]
+  })
 
   // await WaifuRepo.upsertWaifu({
   //   urlId: '',
