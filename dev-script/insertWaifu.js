@@ -2115,9 +2115,48 @@ async function insertWaifu () {
         imgNormalUrl: 'https://i.imgur.com/wZ4QiDW.png',
         imgPopUrl: 'https://i.imgur.com/oPObhTE.png',
         imgIconUrl: 'https://i.imgur.com/CotAGfV.png',
-        imgInfo: '',
+        imgInfo: 'https://youtu.be/y54UfL3OtfI?t=1556 & https://youtu.be/y54UfL3OtfI?t=1605',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/lutra-hota.mp3',
-        audioInfo: ''
+        audioInfo: 'https://youtu.be/y54UfL3OtfI?t=1604'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'obear ',
+    name: '歐貝爾',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/nfkWJzA.png',
+        imgPopUrl: 'https://i.imgur.com/42qR9cM.png',
+        imgIconUrl: 'https://i.imgur.com/SZ5bRdu.png',
+        imgInfo: 'https://youtu.be/Fl8QAebF0B0',
+        audioPopUrl: 'https://anthroplankton.github.io/popwaifu-asset/audio/obear-yuema.mp3',
+        audioInfo: 'https://youtu.be/Fl8QAebF0B0'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'chilla',
+    name: '祈菈‧貝希毛絲',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/rvVzvSH.png',
+        imgPopUrl: 'https://i.imgur.com/WSy4pYb.png',
+        imgIconUrl: 'https://i.imgur.com/My2Cf0M.png',
+        imgInfo: 'https://youtu.be/46bMAQHyui8?t=3037 & https://youtu.be/46bMAQHyui8?t=3041',
+        audioPopUrl: 'https://anthroplankton.github.io/popwaifu-asset/audio/chilla-bab.mp3',
+        audioInfo: 'https://youtu.be/upGYnCMLIMw'
+      },
+      {
+        modeName: 'bababa',
+        imgNormalUrl: 'https://i.imgur.com/rvVzvSH.png',
+        imgPopUrl: 'https://i.imgur.com/WSy4pYb.png',
+        imgIconUrl: 'https://i.imgur.com/My2Cf0M.png',
+        imgInfo: 'https://youtu.be/46bMAQHyui8?t=3037 & https://youtu.be/46bMAQHyui8?t=3041',
+        audioPopUrl: 'https://anthroplankton.github.io/popwaifu-asset/audio/chilla-bababa.mp3',
+        audioInfo: 'https://youtu.be/upGYnCMLIMw'
       }
     ]
   })
