@@ -2131,7 +2131,7 @@ async function insertWaifu () {
         imgPopUrl: 'https://i.imgur.com/42qR9cM.png',
         imgIconUrl: 'https://i.imgur.com/SZ5bRdu.png',
         imgInfo: 'https://youtu.be/Fl8QAebF0B0',
-        audioPopUrl: 'https://anthroplankton.github.io/popwaifu-asset/audio/obear-yuema.mp3',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/obear-yuema.mp3',
         audioInfo: 'https://youtu.be/Fl8QAebF0B0'
       }
     ]
@@ -2146,7 +2146,7 @@ async function insertWaifu () {
         imgPopUrl: 'https://i.imgur.com/WSy4pYb.png',
         imgIconUrl: 'https://i.imgur.com/My2Cf0M.png',
         imgInfo: 'https://youtu.be/46bMAQHyui8?t=3037 & https://youtu.be/46bMAQHyui8?t=3041',
-        audioPopUrl: 'https://anthroplankton.github.io/popwaifu-asset/audio/chilla-bab.mp3',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/chilla-bab.mp3',
         audioInfo: 'https://youtu.be/upGYnCMLIMw'
       },
       {
@@ -2155,7 +2155,7 @@ async function insertWaifu () {
         imgPopUrl: 'https://i.imgur.com/WSy4pYb.png',
         imgIconUrl: 'https://i.imgur.com/My2Cf0M.png',
         imgInfo: 'https://youtu.be/46bMAQHyui8?t=3037 & https://youtu.be/46bMAQHyui8?t=3041',
-        audioPopUrl: 'https://anthroplankton.github.io/popwaifu-asset/audio/chilla-bababa.mp3',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/chilla-bababa.mp3',
         audioInfo: 'https://youtu.be/upGYnCMLIMw'
       }
     ]
