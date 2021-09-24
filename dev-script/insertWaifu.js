@@ -2122,7 +2122,7 @@ async function insertWaifu () {
     ]
   })
   await WaifuRepo.upsertWaifu({
-    urlId: 'obear ',
+    urlId: 'obear',
     name: '歐貝爾',
     modeConfigList: [
       {
