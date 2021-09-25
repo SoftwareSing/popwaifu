@@ -1705,7 +1705,9 @@ async function insertWaifu () {
         imgNormalUrl: 'https://i.imgur.com/LYUWs56.jpeg',
         imgPopUrl: 'https://i.imgur.com/cTGhYB7.jpeg',
         imgIconUrl: 'https://i.imgur.com/nxLdZFe.png',
-        imgInfo: 'https://www.facebook.com/RanaVtb/photos/?tab=album&album_id=111705640746455&ref=page_internal&mt_nav=1'
+        imgInfo: 'https://www.facebook.com/RanaVtb/photos/?tab=album&album_id=111705640746455&ref=page_internal&mt_nav=1',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/toba-rana-pop.mp3',
+        audioInfo: 'https://youtu.be/qgWxzQQT0ew'
       }
     ]
   })
@@ -2157,6 +2159,21 @@ async function insertWaifu () {
         imgInfo: 'https://youtu.be/46bMAQHyui8?t=3037 & https://youtu.be/46bMAQHyui8?t=3041',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/chilla-bababa.mp3',
         audioInfo: 'https://youtu.be/upGYnCMLIMw'
+      }
+    ]
+  })
+  await WaifuRepo.upsertWaifu({
+    urlId: 'hati',
+    name: '哈提Hati',
+    modeConfigList: [
+      {
+        modeName: 'default',
+        imgNormalUrl: 'https://i.imgur.com/exX5Xmi.jpeg',
+        imgPopUrl: 'https://i.imgur.com/q4qEBAB.jpeg',
+        imgIconUrl: 'https://i.imgur.com/exX5Xmi.jpeg',
+        imgInfo: 'https://twitter.com/MoonHoundHati',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/hati-pop.mp3',
+        audioInfo: 'https://discord.com/channels/785078538419699723/857133583651438623/857133759672614923'
       }
     ]
   })
