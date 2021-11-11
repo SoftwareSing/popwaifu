@@ -42,6 +42,15 @@ async function insertWaifu () {
         audioNormalUrl: 'https://softwaresing.github.io/popwaifu-file/audio/15-150-2.mp3',
         audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/15-150-1.mp3',
         audioInfo: 'https://youtu.be/J4kvgE3bEPA?t=6452'
+      },
+      {
+        modeName: 'chicken',
+        imgNormalUrl: 'https://i.imgur.com/V4izKux.png',
+        imgPopUrl: 'https://i.imgur.com/imqEcWP.png',
+        imgIconUrl: 'https://i.imgur.com/yAUW1Xa.png',
+        imgInfo: 'https://youtu.be/sR6Lh05jjLE?t=8115',
+        audioPopUrl: 'https://softwaresing.github.io/popwaifu-file/audio/15-chicken.mp3',
+        audioInfo: 'https://youtu.be/sR6Lh05jjLE?t=8115'
       }
     ]
   })
