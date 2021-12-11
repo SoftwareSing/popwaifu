@@ -1,4 +1,5 @@
 const ipaddr = require('ipaddr.js')
+const { ipv4Trust, ipv6Trust } = require('~config/ipTrustConfig')
 
 /**
  * @typedef {import('@types/express').Request} Request
@@ -11,7 +12,7 @@ exports.getIp = function (req) {
   const forwarded = req.headers['x-forwarded-for']
   if (typeof forwarded !== 'string') return req.socket.remoteAddress
 
-  const ips = forwarded.split(', ')
+  const ips = forwarded.split(/ *, */)
   for (let i = ips.length - 1; i >= 0; i -= 1) {
     const ip = ips[i]
     if (!isTrust(ip)) return ip
@@ -20,22 +21,18 @@ exports.getIp = function (req) {
   return req.socket.remoteAddress
 }
 
+const ipv4CidrTrustList = ipv4Trust.map((cidr) => ipaddr.parseCIDR(cidr))
+const ipv6CidrTrustList = ipv6Trust.map((cidr) => ipaddr.parseCIDR(cidr))
 function isTrust (ip) {
-  return ipaddr.IPv4.isIPv4(ip) ? isV4Trust(ip) : isV6Trust(ip)
+  return ipaddr.IPv4.isIPv4(ip)
+    ? isMatchCidr(ip, ipv4CidrTrustList)
+    : isMatchCidr(ip, ipv6CidrTrustList)
 }
 
-function isV4Trust (ip) {
+function isMatchCidr (ip, cidrList) {
   const addr = ipaddr.parse(ip)
-  return ip === '34.95.86.237' ||
-    addr.match(ipaddr.parseCIDR('10.0.0.0/8')) ||
-    addr.match(ipaddr.parseCIDR('172.16.0.0/12')) ||
-    addr.match(ipaddr.parseCIDR('192.168.0.0/16'))
-}
-
-function isV6Trust (ip) {
-  const addr = ipaddr.parse(ip)
-  return ip === '2600:1901:0:1468::' ||
-    addr.match(ipaddr.parseCIDR('fc00::/7')) ||
-    addr.match(ipaddr.parseCIDR('::1/128')) ||
-    addr.match(ipaddr.parseCIDR('fe80::/10'))
+  for (const cidr of cidrList) {
+    if (addr.match(cidr)) return true
+  }
+  return false
 }
