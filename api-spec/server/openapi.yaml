@@ -1,0 +1,18 @@
+openapi: '3.0.2'
+info:
+  title: popwaifu API
+  version: '0.0.1'
+servers:
+  - url: '/api'
+  - url: 'https://popwaifu.click/api'
+paths:
+  '/':
+    $ref: './root.yaml'
+  # pop
+  '/v1/pop/record':
+    $ref: './pop/record.yaml'
+  # waifu
+  '/v1/waifu/list':
+    $ref: './waifu/list.yaml'
+  '/v1/waifu/list/popcount':
+    $ref: './waifu/list/popcount.yaml'

@@ -1,5 +1,6 @@
 const express = require('express')
 
+const { apiSpecRouter } = require('./apiSpecRouter')
 const { popRouterV1 } = require('./popRouter')
 const { waifuRouterV1 } = require('./waifuRouter')
 
@@ -13,6 +14,7 @@ v1.use('/waifu', waifuRouterV1)
 apiRouter.route('/').get(function (req, res) {
   res.status(200).json('popwaifu API')
 })
+apiRouter.use('/spec', apiSpecRouter)
 apiRouter.use('/v1', v1)
 
 exports.apiRouter = apiRouter

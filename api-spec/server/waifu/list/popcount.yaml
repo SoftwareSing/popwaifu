@@ -1,0 +1,25 @@
+get:
+  operationId: waifu.list.popcount.get.v1
+  summary: get all waifu click count info
+  tags:
+    - waifu
+  responses:
+    '200':
+      description: waifu list
+      content:
+        'application/json':
+          schema:
+            type: array
+            items:
+              type: object
+              additionalProperties: false
+              properties:
+                waifuId:
+                  description: waifu id
+                  required: true
+                  type: string
+                  example: 612ced2ee6bef19361a26a2b
+                popCount:
+                  description: click count
+                  required: true
+                  type: integer
