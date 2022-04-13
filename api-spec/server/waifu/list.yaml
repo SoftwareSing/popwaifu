@@ -1,0 +1,68 @@
+get:
+  operationId: waifu.list.get.v1
+  summary: get all waifu info
+  tags:
+    - waifu
+  responses:
+    '200':
+      description: waifu list
+      content:
+        'application/json':
+          schema:
+            type: array
+            items:
+              type: object
+              additionalProperties: false
+              properties:
+                waifuId:
+                  description: waifu id
+                  required: true
+                  type: string
+                  example: 612ced2ee6bef19361a26a2b
+                urlId:
+                  description: url path
+                  required: true
+                  type: string
+                  example: miku
+                name:
+                  description: waifu name
+                  required: true
+                  type: string
+                  example: 初音ミク
+                popCount:
+                  description: click count
+                  required: true
+                  type: integer
+                modeConfigList:
+                  description: waifu can have many set of image config, every waifu has a default mode which modeName is `default`
+                  required: true
+                  type: array
+                  items:
+                    type: object
+                    additionalProperties: false
+                    properties:
+                      modeName:
+                        required: true
+                        type: string
+                        example: default
+                      imgNormalUrl:
+                        required: true
+                        type: string
+                      imgPopUrl:
+                        required: true
+                        type: string
+                      imgIconUrl:
+                        required: true
+                        type: string
+                      imgInfo:
+                        required: true
+                        type: string
+                      audioNormalUrl:
+                        required: true
+                        type: string
+                      audioPopUrl:
+                        required: true
+                        type: string
+                      audioInfo:
+                        required: true
+                        type: string

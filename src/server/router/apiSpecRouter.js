@@ -13,24 +13,21 @@ async function genHtml () {
   return swaggerUi.generateHTML(swaggerDoc, { customSiteTitle: 'popwaifu API spec' })
 }
 
+apiSpecRouter.use((req, res, next) => {
+  res.setHeader('Cache-Control', 'public, max-age=900')
+  return next()
+})
+
+apiSpecRouter.use(swaggerUi.serve)
+
 apiSpecRouter.get('/', async (req, res) => {
   try {
     const page = await htmlPromise
-    res.setHeader('Cache-Control', 'public, max-age=600')
     return res.status(200).send(page)
   } catch (err) {
     consoleUnexpectedError(err)
     return res.status(500).json({ error: 'unknow swagger error' })
   }
 })
-
-apiSpecRouter.use(
-  '/',
-  (req, res, next) => {
-    res.setHeader('Cache-Control', 'public, max-age=86400')
-    return next()
-  },
-  swaggerUi.serve
-)
 
 exports.apiSpecRouter = apiSpecRouter

@@ -6,15 +6,13 @@ servers:
   - url: '/api'
   - url: 'https://popwaifu.click/api'
 paths:
-  /:
-    get:
-      operationId: root.get
-      summary: for testing api server is online
-      responses:
-        '200':
-          description: normal response
-          content:
-            'application/json':
-              schema:
-                type: string
-                example: 'popwaifu API'
+  '/':
+    $ref: './root.yaml'
+  # pop
+  '/v1/pop/record':
+    $ref: './pop/record.yaml'
+  # waifu
+  '/v1/waifu/list':
+    $ref: './waifu/list.yaml'
+  '/v1/waifu/list/popcount':
+    $ref: './waifu/list/popcount.yaml'

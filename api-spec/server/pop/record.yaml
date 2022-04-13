@@ -1,0 +1,28 @@
+post:
+  operationId: pop.record.post.v1
+  summary: record clicks
+  tags:
+    - pop
+  requestBody:
+    required: true
+    content:
+      'application/json':
+        schema:
+          type: object
+          properties:
+            waifuPopObj:
+              required: true
+              type: object
+              additionalProperties:
+                description: key is waifu id, and value is click count
+                type: integer
+                minimum: 1
+                maximum: 150
+              example:
+                612ced2ee6bef19361a26a27: 100
+                613e0d553097fa58dcfc9295: 50
+  responses:
+    '202':
+      description: success record response
+    '429':
+      description: too many request
