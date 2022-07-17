@@ -2,10 +2,10 @@ get:
   operationId: root.get
   summary: for testing api server is online
   responses:
-    '200':
+    "200":
       description: normal response
       content:
-        'application/json':
+        application/json:
           schema:
             type: string
-            example: 'popwaifu API'
+            example: popwaifu API

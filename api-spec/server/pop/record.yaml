@@ -6,7 +6,7 @@ post:
   requestBody:
     required: true
     content:
-      'application/json':
+      application/json:
         schema:
           type: object
           properties:
@@ -22,7 +22,7 @@ post:
                 612ced2ee6bef19361a26a27: 100
                 613e0d553097fa58dcfc9295: 50
   responses:
-    '202':
+    "202":
       description: success record response
-    '429':
+    "429":
       description: too many request
