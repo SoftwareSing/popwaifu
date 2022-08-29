@@ -543,7 +543,7 @@ async function insertWaifu () {
   })
   await WaifuRepo.upsertWaifu({
     urlId: 'linglan',
-    name: '李李鈴蘭',
+    name: '森森鈴蘭',
     modeConfigList: [
       {
         modeName: 'default',
